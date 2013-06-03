@@ -1,13 +1,9 @@
-Windsor Secondary -- BlackBerry 10
+Windsor Secondary -- HTML5
 ========
 
-Version 0.1 'Helium'
+Version 0.1 'Neon'
 --------
 
-While this project has been in development for many months, I am now just getting around to setting up a proper GitHub rep for it.
+While this project has been in development for many months, I am now just getting around to setting up a proper GitHub repo for it.
 
 Stay tuned for future updates
-
-Hopefully BlackBerry's IDE will play nice.
-
-All the working sets are now all added.
