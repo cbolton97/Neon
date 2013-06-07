@@ -2,9 +2,27 @@
 <html>
 	<head>
 		<title>Neon</title>
+		<link rel="stylesheet" href="res/styles/timetable_style.css" />
 	</head>
 	<body>
 		<h1>Neon Root</h1>
-		<script type="text/javascript" src="res/scripts/data.js"></script>
+		<div id="container">
+			<h2>Today's date is <span id="date"></span>.</h2>
+			<h2>It is day <span id="day"></span>.</h2>
+			<h2>The Block Rotation is 
+				<span id="block1"></span>
+				<span id="block2"></span>
+				<span id="block3"></span>
+				<span id="block4"></span>
+			</h2>
+			<div id="load"></div>
+		</div>
+		
+		
+		
+		
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+		<script src="res/scripts/init.js"></script>
+		<script src="res/scripts/func.js"></script>
 	</body>
 </html>
