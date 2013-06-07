@@ -6,8 +6,8 @@ $.getJSON('res/db/data.json', function(data) {
 		if(data.rotations[i].date === todayDate){
 			var current = data.rotations[i];
 			
-			document.getElementById("date").innerHTML = current.date;
-			document.getElementById("day").innerHTML = current.day;
+			//document.getElementById("date").innerHTML = current.date;
+			document.getElementById("today-blockday").innerHTML = "Day " + current.day;
 			document.getElementById("block1").innerHTML = current.block1;
 			document.getElementById("block2").innerHTML = current.block2;
 			document.getElementById("block3").innerHTML = current.block3;

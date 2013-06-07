@@ -1,28 +1,137 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 	<head>
-		<title>Neon</title>
-		<link rel="stylesheet" href="res/styles/timetable_style.css" />
+		<meta charset="utf-8">
+		<meta name="viewport" id="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=no" />
+		<title>Mobile - BlackBerry 10</title>
+		<link rel="stylesheet" href="res/styles/header-style.css" />
+		<link rel="stylesheet" href="res/styles/main-style.css" />
+		<link rel="stylesheet" href="res/styles/schedule-style.css" />
 	</head>
 	<body>
-		<h1>Neon Root</h1>
-		<div id="container">
-			<h2>Today's date is <span id="date"></span>.</h2>
-			<h2>It is day <span id="day"></span>.</h2>
-			<h2>The Block Rotation is 
-				<span id="block1"></span>
-				<span id="block2"></span>
-				<span id="block3"></span>
-				<span id="block4"></span>
-			</h2>
-			<div id="load"></div>
+	<div id="fixed-container">
+		<div id="main-header">
+			<div class="header-image" id="left-header-image">
+				<img src="res/images/duke.png" />
+			</div>
+			<div class="header-image" id="right-header-image">
+				<img src="res/images/duke.png" />
+			</div>
+			<div id="header-text-container">
+				<div id="header-text-title">
+					<h1>WINDSOR</h1>
+				</div>
+				<div id="header-text-lang">
+					<div class="text-lang">
+						<h2>SECONDARY SCHOOL</h2>
+					</div>
+					<div class="text-lang">
+						<h2>ECOLE SECONDAIRE</h2>
+					</div>
+					<div class="clear"></div>
+				</div>
+			</div>
 		</div>
-		
-		
-		
-		
-		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
-		<script src="res/scripts/init.js"></script>
-		<script src="res/scripts/func.js"></script>
+		<div id="ticker-container">
+			<div id="ticker-numbers-container">
+				<div class="ticker-text">
+					<span id="ticker-numbers-header">Today's Block Rotation:</span>
+				</div>
+				<div id="ticker-numbers">
+					<span id="block1"></span>
+					<span id="block2"></span>
+					<span id="block3"></span>
+					<span id="block4"></span>
+				</div>
+				<div class="ticker-text">
+					<span id="today-weekday"></span>
+					<span id="today-date"></span>
+					<span id="today-blockday"></span>
+				<div class="clear"></div>
+				</div>
+			</div>
+		</div>
+		<div id="schedule-header">
+				<h1>Today's Schedule</h1>
+		</div>
+	</div>
+		<div id="schedule-container">
+			<table id="schedule-table" cellpadding="0" cellspacing="0" width="95%">
+				<div id="schedule-table-thead">
+					<th class="table-th" id="table-th-c1">Block</th>
+					<th class="table-th" id="table-th-c2" colspan="3">Start - End</th>
+					<th class="table-th" id="table-th-c3">Duration</th>
+				</div>
+				<tr class="table-major" cellspacing="2">
+					<td class="major-c1">2</td>
+					<td class="major-c2">8:30</td>
+					<td class="major-c3">-</td>
+					<td class="major-c4">9:50</td>
+					<td class="major-c5">1:20</td>
+				</tr>
+					<tr class="table-minor">
+						<td class="minor-c1">Break</td>
+						<td class="minor-c2">9:50</td>
+						<td class="minor-c3">-</td>
+						<td class="minor-c4">10:05</td>
+						<td class="minor-c5">0:15</td>
+					</tr>
+				<tr class="table-major">
+					<td class="major-c1">3</td>
+					<td class="major-c2">10:05</td>
+					<td class="major-c3">-</td>
+					<td class="major-c4">11:25</td>
+					<td class="major-c5">1:20</td>
+				</tr>
+					<tr class="table-minor">
+						<td class="minor-c1">Rotate</td>
+						<td class="minor-c2">11:25</td>
+						<td class="minor-c3">-</td>
+						<td class="minor-c4">11:30</td>
+						<td class="minor-c5">0:05</td>
+					</tr>
+				<tr class="table-major">
+					<td class="major-c1">1</td>
+					<td class="major-c2">11:30</td>
+					<td class="major-c3">-</td>
+					<td class="major-c4">12:50</td>
+					<td class="major-c5">1:20</td>
+				</tr>
+					<tr class="table-minor">
+						<td class="minor-c1">Lunch</td>
+						<td class="minor-c2">12:50</td>
+						<td class="minor-c3">-</td>
+						<td class="minor-c4">1:40</td>
+						<td class="minor-c5">0:50</td>
+					</tr>
+				<tr class="table-major">
+					<td class="major-c1">4</td>
+					<td class="major-c2">1:40</td>
+					<td class="major-c3">-</td>
+					<td class="major-c4">3:00</td>
+					<td class="major-c5">1:20</td>
+				</tr>
+			</table>
+		</div>
+			<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+			<script src="res/scripts/init.js"></script>
+			<script src="res/scripts/func.js"></script>
 	</body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
