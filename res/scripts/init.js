@@ -1,7 +1,5 @@
 console.log("initializing...");
-	
-	$('#error-toast').hide();
-	
+		
 	
 	var now = new Date();
 
@@ -32,6 +30,11 @@ console.log("initializing...");
 
 		});
 	}
-
-
+	function getDataInit(){
+		getData();
+		//setTimeout(function() {
+		//	getDataInit();
+		//},2000);
+	}
+	getDataInit();
 console.log("---------------");
