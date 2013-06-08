@@ -1,0 +1,2 @@
+-Add more timetable profiles, rename file (timetable-full.html)
+-Clean up func.js (add error-toasts)
