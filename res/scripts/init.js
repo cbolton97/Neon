@@ -35,7 +35,7 @@ console.log("initializing...");
 		setTimeout(function() {
 			getDataInit();
 			console.log("updated at " + now);
-		},45000000);
+		},18000000);
 	}
 	getDataInit();
 console.log("---------------");
