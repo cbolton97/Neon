@@ -1,6 +1,6 @@
 #schedule-container{
 	margin:0;
-	padding:260px 0 0 0;
+	padding:210px 0 0 0;
 }
 #schedule-header{
 	margin:0;
@@ -13,20 +13,20 @@
 	#schedule-header h1{
 		margin:0;
 		padding:4px 0 0 5px;
-		font:bold 16px sans-serif;
+		font:bold 14px sans-serif;
 		color:#007F0E;
 	}
 	
 #schedule-table{
 	margin:auto;
-	padding:15px;
+	padding:13px;
 	background:#EEE;
 }
 #schedule-table-thead{
 	margin:0;
 }
 .table-th{
-	font:bold 18px sans-serif;
+	font:bold 15px sans-serif;
 	color:#333;
 	text-align:center;
 	border-bottom:2px solid #333;
@@ -86,7 +86,7 @@
 	padding:10px 0;
 	border-top:1px solid #60A917;
 	border-bottom:1px solid #60A917;
-	font:bold 16px sans-serif;
+	font:bold 13px sans-serif;
 }
 .minor-c1,
 .minor-c2,

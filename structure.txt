@@ -1,0 +1,15 @@
+JSON structure
+
+	type{
+		0: Normal school day;
+		1: Morning homeroom (8:30 - 8:50);
+		2: Staff development day (start at 9:50)
+		3:
+		4:
+		5:
+		6:
+		7:
+		8:
+		9:
+		10: No school all day;
+	}
