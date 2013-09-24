@@ -1,35 +1,38 @@
 #schedule-container{
 	margin:0;
-	padding:210px 0 0 0;
+	padding:0
 }
-#schedule-header{
+.schedule-header{
 	margin:0;
 	padding:0;
-	height:25px;
 	background:#EEE;
-	box-shadow:0px 0px 10px #444;
 	
 }
-	#schedule-header h1{
+	.schedule-header h1{
 		margin:0;
-		padding:4px 0 0 5px;
-		font:bold 14px sans-serif;
+		padding:5px;
+		font:115% "robot light" sans-serif;
 		color:#007F0E;
 	}
 	
+#timetable-container{
+	
+	padding:9em 0 0 0;
+}
 #schedule-table{
-	margin:auto;
-	padding:13px;
+	margin:10px auto 20px auto;
+	padding:0;
 	background:#EEE;
 }
 #schedule-table-thead{
 	margin:0;
 }
 .table-th{
-	font:bold 15px sans-serif;
-	color:#333;
+	font:130% sans-serif;
+	color:#FFF;
 	text-align:center;
-	border-bottom:2px solid #333;
+	background:#333;
+	padding:5px;
 }
 
 
@@ -84,9 +87,8 @@
 .major-c5{
 	margin:0;
 	padding:10px 0;
-	border-top:1px solid #60A917;
-	border-bottom:1px solid #60A917;
-	font:bold 13px sans-serif;
+	font:120% sans-serif;
+	color:#333;
 }
 .minor-c1,
 .minor-c2,
@@ -95,10 +97,10 @@
 .minor-c5{
 	margin:1px 0;
 	padding:0;
-	border-top:1px solid #60A917;
-	border-bottom:1px solid #60A917;
-	font:italic 12px sans-serif;
-	color:#007F0E;
+	background:#007F0E;
+	font:italic 110% sans-serif;
+	color:#FFF;
+	padding:2px;
 }
 
 

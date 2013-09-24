@@ -1,0 +1,34 @@
+#blogs-header{
+	margin:-20px 0 0 0;
+	padding:15px 0 5px 4px;
+	background:#333;
+	text-align:left;
+}
+#blogs-nav{
+	margin:0;
+	padding:0;
+	float:left;
+}
+#blogs-nav a{
+	color:#FFF;
+	font-size:100%;
+	text-decoration:none;
+}
+#blogs-title span{
+	margin:0;
+	padding:0;
+	color:#FFF;
+	font-size:150%;
+	float:left;
+	
+}
+.blog-item{
+	margin:0;
+	padding:17px 12px;
+	display:block;
+	background:#FFF;
+	font-size:120%;
+	text-decoration:none;
+	color:#60A917;
+	border-bottom:1px solid #AAA;
+}

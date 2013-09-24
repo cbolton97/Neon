@@ -1,0 +1,30 @@
+#canvas-header{
+	margin:-1px 0 0 0;
+	padding:0;
+	width:100%;
+	height:3.6em;
+	background:#007F0E;
+	box-shadow:0 1px 5px #222;
+}
+#canvas-header-text{
+	text-align:center;
+}
+#canvas-header-title{
+	margin:0;
+	padding:0;
+	color:#FFF;
+	font:170% georgia, serif;
+	color:#FFF;
+	letter-spacing:4px;
+}
+#canvas-header-sub{
+	margin-top:-3px;
+}
+.header-sub{
+	margin:0;
+	padding:0 1em 0 2px;
+	display:inline;
+	color:#FFF;
+	font:80% georgia, serif;
+	color:#FFF;
+}

@@ -1,32 +1,9 @@
-html, body{
-	margin:0;
-	padding:0;
-	position:relative;
-	width:100%;
-	height:100%;
-	background:url('../images/retro_intro.png');
-}
-.spacer{
-	margin:10px;
-	width:100px;
-	height:800px;
-	background:blue;
-}
-.clear{
-	clear:both;
-}
-#fixed-container{
-	position:fixed;
-	margin:0;
-	width:100%;
-	z-index:5;
-}
 #ticker-container{
-	margin:0;
-	padding:0;
+	margin:-20px 0 0 0;
+	padding:10px 0 0 0;
 	width:100%;
-	height:auto;
-	background:url('../images/navy_blue.png');
+	background:#333;
+	box-shadow:0 1px 5px #222;
 }
 #ticker-numbers-container{
 	margin:0;
@@ -36,10 +13,10 @@ html, body{
 .ticker-text{
 	margin:0;
 	padding:3px;
-	font:14px sans-serif;
-	color:#F9F9F9;
-	text-shadow: 0 0 7px #000;
+	font-size:105%;
+	color:#FFF;
 	text-align:left;
+	font-family:"robot light", sans-serif;
 }
 #today-weekday{
 		margin:0;
@@ -61,31 +38,25 @@ html, body{
 }
 #ticker-numbers{
 	margin:0;
-	padding:5px;
+	padding:0;
 	text-align:center;
-	background:#333;
-	box-shadow:0px 0px 10px #111;
-	/*border-top:3px solid #111;
-	border-bottom:3px solid #111;*/
 }
-	#error-toast{
-		width:100%;
-		font:22px sans-serif;
-		color:red;
-		z-index:500;
-		display:block;
-		text-align:center;
-		position:absolute;
-		
-	}
 	.ticker-block{
 		margin:0 5px;
-		padding:10px 5px;
-		font:52px sans-serif;
+		padding:0 10px;
+		font:600% sans-serif;
 		color:#FFF;
-		text-shadow:0px 0px 3px #007F0E;
+		font-family:"robot thin", sans-serif;
 	}
-
+.timetable-fail{
+		margin:10px 0;
+		width:100%;
+		font:140% sans-serif;
+		color:red;
+		display:block;
+		text-align:center;
+		
+	}
 
 /*RESOURCES START*/
 	/*

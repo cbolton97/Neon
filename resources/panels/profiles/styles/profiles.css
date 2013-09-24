@@ -1,0 +1,45 @@
+#teachers-header{
+	margin:-20px 0 0 0;
+	padding:15px 0 5px 4px;
+	background:#333;
+	text-align:left;
+}
+#teachers-header span{
+	margin:0;
+	padding:0;
+	color:#FFF;
+	font-size:150%;
+	
+}
+.list-container{
+	margin:0;
+	padding:0;
+}
+.list-container h3{
+	padding:3px;
+	margin:0;
+	color:#333;
+	font-weight:bold;
+	background:#EEE;
+	border-bottom:1px solid #AAA;
+}
+.list-item{
+	margin:0;
+	padding:13px 7px;
+	display:block;
+	background:#FFF;
+	font-size:120%;
+	color:#333;
+	border-bottom:1px solid #AAA;
+}
+.list-item a{
+	text-decoration:none;
+	color:#60A917;
+}
+.item-name{
+	float:left;
+	
+}
+.item-desc{
+	float:right;
+}
