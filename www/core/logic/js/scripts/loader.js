@@ -16,7 +16,6 @@ $('#wrapper-nav ul a').bind(trigger, function (event) {
 function loadPage(requestedPage, source){
 	console.log("loadPage has received '" + requestedPage + "' from '" + source + "'");
 	$('.content-element').hide();
-	window.scrollTo(0, 1);
 	$('title').html(requestedPage);
 	$('.'+ requestedPage).removeAttr('style');
 	$('.header-refresh').attr('href', requestedPage);

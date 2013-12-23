@@ -7,7 +7,7 @@ function onResume() {
     }, 0);
 }
 //global used to determine user input type ie touchstart
-var trigger = "click";
+var trigger = "touchstart";
 
 //creates time, space, and quite possibly the universe.
 var days = new Array('Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday');

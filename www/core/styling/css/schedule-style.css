@@ -11,7 +11,7 @@
 	.schedule-header span{
 		margin:0;
 		padding:5px;
-		font:90% "robot light" sans-serif;
+		font:90% "platform light", sans-serif;
 		color:#007F0E;
 	}
 	.schedule-header-title{
@@ -41,7 +41,7 @@
 .schedule-block{
 	margin:0;
 	float:left;
-	font:300% "robot light", sans-serif;
+	font:300% "platform thin", sans-serif;
 	color:#444;
 }
 .schedule-info {
@@ -50,12 +50,12 @@
 }
 .schedule-points {
     display:block;
-    font:150% "robot light", sans-serif;
+    font:150% "platform light", sans-serif;
 	color:#333;
 }
 .schedule-dur{
     float:right;
-    font:80% "robot thin", sans-serif;
+    font:80% "platform light", sans-serif;
 	color:#333;
 }
 .schedule-meta{
@@ -63,7 +63,7 @@
 	padding:3px 0;
 	border-top:1px solid #CCC;
 	border-bottom:1px solid #CCC;
-	font:90% "robot light", sans-serif;
+	font:90% "platform light", sans-serif;
 }
 .schedule-title{
 	margin:0 5px 0 0;
@@ -76,7 +76,7 @@
 .error-message-tomorrow{
 	display:block;
 	padding:10px;
-	font:100% "robot light", sans-serif;
+	font:100% "platform light", sans-serif;
 	color:#333;
 }
 

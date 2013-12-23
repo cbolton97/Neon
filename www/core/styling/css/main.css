@@ -1,4 +1,5 @@
-html,
+
+
 body{
 	margin:0;
 	padding:0 0 10px 0;
@@ -34,7 +35,7 @@ a {
     margin:1px auto 1px -19px;
     width:38px;
     height:45px;
-    background:url('../images/LogoHeader-fixed.png');
+    background:url('../images/LogoHeader.png');
     background-repeat:no-repeat;
     background-size:contain;
 }
@@ -80,7 +81,7 @@ a {
 	height:100%;
 	text-decoration:none;
 	color:#FFF;
-	font:80% sans-serif;
+	font:80% "platform light", sans-serif;
 	text-transform:uppercase;
     -webkit-tap-highlight-color:rgba(0,127,14,0.5);
 	
@@ -93,13 +94,13 @@ a {
 #content-container{
 	margin:0;
 	padding:5.3em 0 20px 0;
-    -webkit-overflow-scrolling: touch;
+    
 }
 .content-header {
     display:block;
     margin:15px 5px 5px 5px;
 	padding:0;
-	font:90% "robot light" sans-serif;
+	font:90% "platform light", sans-serif;
 	color:#007F0E;
 }
 .content-container {
@@ -121,24 +122,38 @@ a {
     clear:both;
 
 }
+.version-container {
+    margin:10px;
+    text-align:center;
 
+}
+.app-title {
+    display:block;
+    font:150% "platform light", sans-serif;
+}
+.current-version-pre{
+    font:200% "platform light", sans-serif;
+}
+.current-version {
+    font:200% "platform thin", sans-serif;
+}
 .item-title {
-    font:bold 100% "robot light" sans-serif;
+    font:bold 100% "platform light", sans-serif;
     color:#333;
 }
 
 .item-name {
-    font:100% "robot light" sans-serif;
+    font:100% "platform light", sans-serif;
     color:#333;
 
 }
 .item-email {
-    font:90% "robot light" sans-serif;
+    font:90% "platform light", sans-serif;
     color:#007F0E;
     text-decoration:none;
 }
 .item-web {
-    font:90% "robot light" sans-serif;
+    font:90% "platform light", sans-serif;
     color:#007F0E;
     text-decoration:none;
 }
