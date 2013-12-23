@@ -25,9 +25,11 @@ a {
 	padding:0;
 	width:100%;
 	height:auto;
-	background:#007F0E;
-    border-bottom:3px solid #252525;
+	background:#238C49;
 	/*box-shadow:0 1px 5px #222;*/
+}
+.header-container {
+      border-bottom:3px solid #1A6B36;
 }
 .header-logo{
     position:absolute;
@@ -129,13 +131,14 @@ a {
 }
 .app-title {
     display:block;
-    font:150% "platform light", sans-serif;
+     margin:10px 0;
+    font:125% "platform light", sans-serif;
 }
 .current-version-pre{
-    font:200% "platform light", sans-serif;
+    font:150% "platform light", sans-serif;
 }
 .current-version {
-    font:200% "platform thin", sans-serif;
+    font:150% "platform thin", sans-serif;
 }
 .item-title {
     font:bold 100% "platform light", sans-serif;
@@ -158,9 +161,10 @@ a {
     text-decoration:none;
 }
 /* Color Palette
-green: #007F0E
-
-    */
+link green: #007F0E
+dark green: #1A6B36
+background green: #238C49;
+ */
 
 
 

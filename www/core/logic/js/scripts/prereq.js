@@ -1,4 +1,8 @@
-﻿//phonegap watching for app resume
+﻿//global used to determine user input type ie touchstart
+var trigger = "click";
+
+
+//phonegap watching for app resume
 document.addEventListener("resume", onResume, false);
 function onResume() {
     setTimeout(function () {
@@ -6,8 +10,7 @@ function onResume() {
         loadPage(page, "resume");
     }, 0);
 }
-//global used to determine user input type ie touchstart
-var trigger = "touchstart";
+
 
 //creates time, space, and quite possibly the universe.
 var days = new Array('Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday');
