@@ -34,7 +34,7 @@ a {
 .header-logo{
     position:absolute;
     left:0;
-    margin:1px auto 1px 0;
+    margin:1px auto 1px 5px;
     width:38px;
     height:45px;
     background:url('../images/LogoHeader-fixed.png');
@@ -65,7 +65,7 @@ a {
 	padding:0;
 	left:0;
 	width:100%;
-	height:35px;
+	height:40px;
 	background:#191919;
 
 }
@@ -90,7 +90,7 @@ a {
 	
 }
 #wrapper-nav ul a li{
-	margin:5px 0;
+	margin:10px 0 0 0;
 	padding:0;
 	display:inline-block;
 }
