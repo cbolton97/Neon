@@ -72,7 +72,7 @@ $('.header-refresh').bind(trigger, function (event) {
     var refreshTarget = $(this).attr('href');
     console.log("refresh: " + refreshTarget);
     loadPage(refreshTarget, "refresh button");
-    navigator.notification.vibrate(100);
+    navigator.notification.vibrate(10);
     $('.header-refresh').animateRotate(360, 1000, "linear");
     event.preventDefault();
     event.returnValue = false;
