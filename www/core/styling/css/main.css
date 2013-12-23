@@ -33,8 +33,8 @@ a {
 }
 .header-logo{
     position:absolute;
-    left:50%;
-    margin:1px auto 1px -19px;
+    left:0;
+    margin:1px auto 1px 0;
     width:38px;
     height:45px;
     background:url('../images/LogoHeader-fixed.png');
@@ -61,15 +61,13 @@ a {
 }
 
 #wrapper-nav{
-    position:fixed;
 	margin:0;
 	padding:0;
 	left:0;
-    bottom:0;
 	width:100%;
 	height:35px;
 	background:#191919;
-    border-top:3px solid rgba(0,0,0,0.4);
+
 }
 #wrapper-nav ul{
 	margin:0;
@@ -98,7 +96,7 @@ a {
 }
 #content-container{
 	margin:0;
-	padding:3em 0 20px 0;
+	padding:5.2em 0 20px 0;
     
 }
 .content-header {
