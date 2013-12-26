@@ -12,12 +12,12 @@ $(function() {
         return navigator.userAgent.match(/(iPad|iPhone|iPod)/g);
     }
  
-    document.addEventListener('deviceready', function(){
+    document.addEventListener('deviceready', function () {
         if (isPhonegap() && isIOS() && window.device && parseFloat(window.device.version) >= 7.0) {
             $('#header-wrapper').addClass('header-wrapper-ios7');
         }
-    }
     });
+});
 //global used to determine user input type ie touchstart
 var trigger = "click";
 
