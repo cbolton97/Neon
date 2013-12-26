@@ -1,7 +1,7 @@
 
 
 //kick off
-loadPage('sites', 'startup');
+loadPage('rotation', 'startup');
 
 
 //init phonegap

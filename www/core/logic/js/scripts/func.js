@@ -73,11 +73,11 @@ function displayListItem(itemType, source) {
             var supportWebCheck = _.isUndefined(source.website);
 
             if (!(supportWebCheck)) {
-                
                 $('.support-list-data').append("<li> <span class='item-title'>" + source.title +
                     "</span><br /> <span class='item-name'>" + source.name + "</span><div class='item-link-container'><a href='mailto:" +
                     source.email + "' class='item-email'>Email: " + source.email + "</a><br /><a class='item-web' href='" + source.website + "'>Visit their website</a></div></li>");
             } else {
+               
                 $('.support-list-data').append("<li> <span class='item-title'>" + source.title +
                     "</span><br /> <span class='item-name'>" + source.name + "</span><div class='item-link-container'><a href='mailto:" + source.email +
                     "' class='item-email'>Email: " + source.email + "</a></div></li>");
