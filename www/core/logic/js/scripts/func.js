@@ -54,25 +54,34 @@ function loadTimeTable(structure, order, time) {
 function displayListItem(itemType, source) {
     switch (itemType) {
         case "admin":
-            $('.admin-list-data').append("<li> <span class='item-title'>" + source.title + "</span> <span class='item-name'>" + source.name + "</span><br /><a href='mailto:" + source.email + "' class='item-email'>" + source.email + "</a> </li>");
+            $('.admin-list-data').append("<li> <span class='item-title'>" + source.title +
+            "</span><span class='item-name'> " + source.name +
+            "</span><div class='item-link-container'><a href='mailto:" + source.email +
+            "' class='item-email'>Email: " + source.email + "</a> </div></li>");
             break;
         case "teachers":
             var teachersWebCheck = _.isUndefined(source.website);
 
             if (!(teachersWebCheck)) {
-                $('.teachers-list-data').append("<li><span class='item-name'>" + source.name + "</span><br /><a href='mailto:" + source.email + "' class='item-email'>" + source.email + "</a> - <a class='item-web' href='" + source.website + "'>website</a></li>");
+                $('.teachers-list-data').append("<li><span class='item-name'>" + source.name + "</span><div class='item-link-container'><a href='mailto:" +
+                     source.email + "' class='item-email'>Email: " + source.email + "</a><br /><a class='item-web' href='" + source.website + "'>Visit their website</a></div></li>");
             } else {
-                $('.teachers-list-data').append("<li><span class='item-name'>" + source.name + "</span><br /><a href='mailto:" + source.email + "' class='item-email'>" + source.email + "</a> </li>");
+                $('.teachers-list-data').append("<li><span class='item-name'>" + source.name +
+                    "</span><div class='item-link-container'><a href='mailto:" + source.email + "' class='item-email'> Email: " + source.email + "</a></div></li>");
             }
             break;
         case "support":
             var supportWebCheck = _.isUndefined(source.website);
 
             if (!(supportWebCheck)) {
-                $('.support-list-data').append("<li> <span class='item-title'>" + source.title + "</span><br /> <span class='item-name'>" + source.name + "</span><br /><a href='mailto:" + source.email + "' class='item-email'>" + source.email + "</a> - <a class='item-web' href='" + source.website + "'>website</a> </li>");
+                
+                $('.support-list-data').append("<li> <span class='item-title'>" + source.title +
+                    "</span><br /> <span class='item-name'>" + source.name + "</span><div class='item-link-container'><a href='mailto:" +
+                    source.email + "' class='item-email'>Email: " + source.email + "</a><br /><a class='item-web' href='" + source.website + "'>Visit their website</a></div></li>");
             } else {
-                console.log("meh");
-                $('.support-list-data').append("<li> <span class='item-title'>" + source.title + "</span><br /> <span class='item-name'>" + source.name + "</span><br /><a href='mailto:" + source.email + "' class='item-email'>" + source.email + "</a> </li>");
+                $('.support-list-data').append("<li> <span class='item-title'>" + source.title +
+                    "</span><br /> <span class='item-name'>" + source.name + "</span><div class='item-link-container'><a href='mailto:" + source.email +
+                    "' class='item-email'>Email: " + source.email + "</a></div></li>");
             }
             break;
 

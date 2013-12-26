@@ -1,7 +1,7 @@
 console.log("Hey, Neon! Let's get started.");
 
 //kick off
-loadPage('rotation', 'startup');
+loadPage('staff', 'startup');
 
 
 //init phonegap

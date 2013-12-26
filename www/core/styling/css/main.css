@@ -5,7 +5,7 @@ body{
 	padding:0 0 10px 0;
 	width:100%;
     height:100%;
-	background:#EEE;
+	background:#F2F2F2;
 }
 a {
     outline:none;
@@ -34,9 +34,9 @@ a {
 .header-logo{
     position:absolute;
     left:0;
-    margin:1px auto 1px 5px;
-    width:38px;
-    height:45px;
+    margin:6px auto 4px 6px;
+    width:30.4px;
+    height:36px;
     background:url('../images/LogoHeader-fixed.png');
     background-repeat:no-repeat;
     background-size:contain;
@@ -112,35 +112,28 @@ a {
 	width:95%;
 	background:#FFF;
 	border-radius:3px;
-	box-shadow:0px 3px 5px #CCC;
+	box-shadow:0px 2px 1px #CCC;
 
 }
 .content-container ul {
     list-style-type:none;
     padding:10px;
 }
-.content-container ul li {
+.content-container ul li{
     display:block;
-    margin:0 0 10px 0;
+    margin:0;
+    padding:10px;
     clear:both;
+    position:relative;
+    border-bottom:1px solid #eee;
+    -webkit-tap-highlight-color:rgba(0,0,0,0.2);
 
 }
-.version-container {
-    margin:10px;
-    text-align:center;
 
+.content-container ul li:last-child{
+    border-bottom:none;
 }
-.app-title {
-    display:block;
-     margin:10px 0;
-    font:125% "platform light", sans-serif;
-}
-.current-version-pre{
-    font:150% "platform light", sans-serif;
-}
-.current-version {
-    font:150% "platform thin", sans-serif;
-}
+
 .item-title {
     font:bold 100% "platform light", sans-serif;
     color:#333;
@@ -151,20 +144,88 @@ a {
     color:#333;
 
 }
-.item-email {
-    font:90% "platform light", sans-serif;
+.item-link-container{
+    display:none;
+    padding:7px 0 0 0;
+    background:#F5F5F5;
+    
+}
+.item-link-container a {
+    display:inline-block;
+    padding:7px;
     color:#007F0E;
+    background:transparent;
+    font:90% "platform light", sans-serif;
     text-decoration:none;
+    -webkit-tap-highlight-color:rgba(0,0,0,0.2);
+}
+.item-email {
 }
 .item-web {
-    font:90% "platform light", sans-serif;
-    color:#007F0E;
-    text-decoration:none;
 }
+
+.app-title {
+    display:block;
+    margin:20px 0 5px 0;
+    font:130% "platform thin", sans-serif;
+    text-align:center;
+}
+.app-desc {
+     display:block;
+     margin:10px;
+     
+}
+.desc{
+    display:block;
+    padding:5px;
+    color:#333;
+    font:95% "platform light", sans-serif;
+}
+.app-desc .author{
+    display:block;
+    padding:5px;
+    color:#333;
+    font:90% "platform light", sans-serif;
+}
+.app-contact {
+    margin:5px 10px;
+    padding:0 0 5px 0;
+}
+.app-contact a {
+    display:block;
+    margin:5px auto;
+    padding:10px;
+    width:70%;
+    text-align:center;
+    background:#F5F5F5;
+    color:#333;
+    font:90% "platform light", sans-serif;
+    text-decoration:none;
+    -webkit-tap-highlight-color:rgba(0,0,0,0.2);
+    border:1px solid #EEE;
+
+}
+.app-twitter {
+    
+}
+.app-dev {
+    margin:10px 0 0 0;
+    text-align:center;
+
+}
+.current-version-pre{
+    font:120% "platform light", sans-serif;
+}
+.current-version {
+    font:120% "platform thin", sans-serif;
+}
+
 /* Color Palette
 link green: #007F0E
 dark green: #1A6B36
 background green: #238C49;
+background grey: #F2F2F2
+light grey: #F5F5F5
  */
 
 

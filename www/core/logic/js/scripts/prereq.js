@@ -80,7 +80,22 @@ $('.header-refresh').bind(trigger, function (event) {
     event.preventDefault();
     event.returnValue = false;
 });
+//watches list-drop down
+$('.list-data').on(trigger, 'li', function (event) {
+    var childPanel = $(this).find('.item-link-container');
+    var panelTest = $(childPanel).is(":visible");
 
+    if (panelTest) {
+        $(this).find('.item-link-container').hide();
+        $('.item-link-container').hide();
+        $('.list-data li').css('background', 'transparent');
+    } else {
+        $('.item-link-container').hide();
+        $('.list-data li').css('background', 'transparent');
+        $(this).find('.item-link-container').show();
+        $(this).css('background', '#F5F5F5');
+    }
+});
 
 //watches lists for web links and parses them with phonegap code
 $('.list-data').on(trigger, '.item-web', function (event) {
@@ -90,3 +105,4 @@ $('.list-data').on(trigger, '.item-web', function (event) {
     event.preventDefault();
     event.returnValue = false;
 });
+
