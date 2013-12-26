@@ -66,8 +66,8 @@ $.fn.animateRotate = function (angle, duration, easing, complete) {
     });
 };
 //watches refresh button
+
 $('.header-refresh').bind(trigger, function (event) {
-    console.clear();
     var refreshTarget = $(this).attr('href');
     loadPage(refreshTarget, "refresh button");
     navigator.notification.vibrate(10);

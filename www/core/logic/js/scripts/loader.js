@@ -1,7 +1,7 @@
 
 //watches nav for user input
 $('#wrapper-nav ul a').bind(trigger, function (event) {
-	console.clear();
+
 	var requestedPage = $(this).attr('href');
 	loadPage(requestedPage, 'nav');
 	event.returnValue = false;
