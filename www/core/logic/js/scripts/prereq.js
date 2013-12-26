@@ -1,5 +1,4 @@
-﻿//init phonegap
-app.initialize();
+﻿
 
 //applies some ios7 specific code
 $(function() {
