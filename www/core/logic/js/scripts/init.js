@@ -1,7 +1,7 @@
-console.log("Hey, Neon! Let's get started.");
+
 
 //kick off
-loadPage('staff', 'startup');
+loadPage('sites', 'startup');
 
 
 //init phonegap

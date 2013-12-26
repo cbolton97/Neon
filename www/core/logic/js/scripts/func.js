@@ -1,7 +1,6 @@
 //main func for 'rotation' 
 function loadTimeTable(structure, order, time) {
 	$('#timetable-'+ time +'-loader').load('./core/styling/templates/timetable-ui.html #' + structure, function() {
-		console.log("timetable loaded for " + time);
 		if (!(structure === "none")) {
 		    if (order === "1" || order === "2" || order === "3") {
 		        var day = "1";
@@ -50,7 +49,7 @@ function loadTimeTable(structure, order, time) {
 	});
 }
 
-//main func for 'staff' and 'blogs'
+//main func for 'staff' and 'sites'
 function displayListItem(itemType, source) {
     switch (itemType) {
         case "admin":
@@ -85,8 +84,8 @@ function displayListItem(itemType, source) {
             }
             break;
 
-        case "blogs":
-            $('.blogs-list-data').append("<li><a class='item-web' href='" + source.website + "'>" + source.name + "</a></li>");
+        case "sites":
+            $('.sites-list-data').append("<li><a class='item-web' href='" + source.website + "'>" + source.name + "</a></li>");
             break;
     }
 }

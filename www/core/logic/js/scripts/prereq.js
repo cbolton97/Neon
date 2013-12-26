@@ -33,13 +33,9 @@ var today_weekday = days[today.getDay()];
 var today_date = months[today.getMonth()] + " " + todayDate + ", " + (fourdigits(today.getYear()));
 var tomorrow_date = months[tomorrow.getMonth()] + " " + tomorrowDate + ", " + (fourdigits(tomorrow.getYear()));
 
-console.log("Today's date: " + today_date);
-console.log("Tomorrow's date: " + tomorrow_date);
-console.log("-----------------------------");
 
 //error handling
 function error(location, message) {
-        console.log("Error called from " + location + ": " + message + " ");
     switch(location){
         case "today":
             $('#timetable-today-loader').load('./core/styling/templates/timetable-ui.html #error-today', function () {
@@ -73,7 +69,6 @@ $.fn.animateRotate = function (angle, duration, easing, complete) {
 $('.header-refresh').bind(trigger, function (event) {
     console.clear();
     var refreshTarget = $(this).attr('href');
-    console.log("refresh: " + refreshTarget);
     loadPage(refreshTarget, "refresh button");
     navigator.notification.vibrate(10);
     $('.header-refresh').animateRotate(360, 1000, "linear");
@@ -81,7 +76,7 @@ $('.header-refresh').bind(trigger, function (event) {
     event.returnValue = false;
 });
 //watches list-drop down
-$('.list-data').on(trigger, 'li', function (event) {
+$('.staff-list ul').on(trigger, 'li', function (event) {
     var childPanel = $(this).find('.item-link-container');
     var panelTest = $(childPanel).is(":visible");
 
@@ -98,7 +93,7 @@ $('.list-data').on(trigger, 'li', function (event) {
 });
 
 //watches lists for web links and parses them with phonegap code
-$('.list-data').on(trigger, '.item-web', function (event) {
+$('.web-data').on(trigger, '.item-web', function (event) {
     var link = $(this).attr('href');
     var ref = window.open(link, '_system', 'location=yes');
     //insert InAppBrowser code for phonegap.
