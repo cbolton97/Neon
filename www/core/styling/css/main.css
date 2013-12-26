@@ -113,6 +113,7 @@ a {
 	background:#FFF;
 	border-radius:3px;
 	box-shadow:0px 2px 1px #CCC;
+    -webkit-box-shadow:0px 2px 1px #CCC;
 
 }
 .content-container ul {

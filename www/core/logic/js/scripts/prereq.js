@@ -58,7 +58,7 @@ $.fn.animateRotate = function (angle, duration, easing, complete) {
     var step = args.step;
     return this.each(function (i, e) {
         args.step = function (now) {
-            $.style(e, 'transform', 'rotate(' + now + 'deg)');
+            $.style(e, '-webkit-transform', 'rotate(' + now + 'deg)');
             if (step) return step.apply(this, arguments);
         };
 
@@ -70,10 +70,9 @@ $.fn.animateRotate = function (angle, duration, easing, complete) {
 $('.header-refresh').bind(trigger, function (event) {
     var refreshTarget = $(this).attr('href');
     loadPage(refreshTarget, "refresh button");
-    navigator.notification.vibrate(10);
     $('.header-refresh').animateRotate(360, 1000, "linear");
     event.preventDefault();
-    event.returnValue = false;
+    navigator.notification.vibrate(10);
 });
 //watches list-drop down
 $('.staff-list ul').on(trigger, 'li', function (event) {

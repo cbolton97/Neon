@@ -31,7 +31,8 @@
 	width:95%;
 	background:#FFF;
 	border-radius:3px;
-	box-shadow:0px 3px 5px #CCC;
+	-webkit-box-shadow:0px 2px 1px #CCC;
+    box-shadow:0px 2px 1px #CCC;
 }
 
 .schedule-item{
