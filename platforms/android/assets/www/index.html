@@ -5,16 +5,19 @@
         <meta name="format-detection" content="telephone=no" />
         <meta name="viewport" id="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=no" />
 		<title>WS Timetable</title>
-		<link rel="stylesheet" href="core/styling/css/main.css" />
-		<link rel="stylesheet" href="core/styling/css/schedule-style.css" />
+        <link rel="stylesheet" type="text/css" href="core/styling/fonts/font.css" />
+        <link rel="stylesheet" type="text/css" href="core/styling/css/main.css" />
+        <link rel="stylesheet" type="text/css" href="core/styling/css/schedule-style.css" />
+        <link rel="stylesheet" type="text/css" href="core/styling/css/overrides.css" />
 	</head>
 	<body>
         
         <div class="app">
             <div id="wrapper">
                 <!-- global header -->
+                
                 <div class="fixed wrapper-element" id="wrapper-header">
-                    <div id="wrapper-hero">
+                    <div class="header-container">
                         <div class="header-logo">
                             
                         </div>
@@ -28,7 +31,7 @@
                         <ul>
                             <a href="rotation"><li>Rotation</li></a>
                             <a href="staff"><li>Staff</li></a>
-                            <a href="blogs"><li>Blogs</li></a>
+                            <a href="sites"><li>Sites</li></a>
                             <a href="about"><li>About</li></a>
                         </ul>
                     </div>
@@ -48,54 +51,54 @@
                     <!-- 'staff' -->
                     <div class="content-element staff">
                         <span class="content-header">Administration Staff</span>
-                        <div class="content-container list-container">
-                            <ul class="admin-list-data list-data"></ul>
+                        <div class="content-container list-container staff-list">
+                            <ul class="admin-list-data web-data list-data"></ul>
                         </div>
                         <span class="content-header">Teaching Staff</span>
-                        <div class="content-container list-container">
-                            <ul class="teachers-list-data list-data"></ul>
+                        <div class="content-container list-container staff-list">
+                            <ul class="teachers-list-data web-data list-data"></ul>
                         </div>
                         <span class="content-header">Support Staff</span>
-                        <div class="content-container list-container">
-                            <ul class="support-list-data list-data"></ul>
+                        <div class="content-container list-container staff-list">
+                            <ul class="support-list-data web-data list-data"></ul>
                         </div>
 
                     </div>
-                    <!-- 'blogs' -->
-                    <div class="content-element blogs">
-                        <span class="content-header">School Blogs</span>
+                    <!-- 'sites' -->
+                    <div class="content-element sites">
+                        <span class="content-header">School Sites</span>
                         <div class="content-container list-container">
-                            <ul class="blogs-list-data list-data"></ul>
+                            <ul class="sites-list-data web-data list-data"></ul>
                         </div>
                     
                     </div>
                     <!-- 'about' -->
                     <div class="content-element about">
-                        <div class="content-container version-container">
                             <span class="app-title">
                                 The Unofficial App of Windsor Secondary
                             </span>
+                        <div class="content-container app-desc" >
+                            <span class="desc">This application was developed to enhance student's daily work load by allowing them access 
+                            to a dynamic timetable, teacher contact information, and other useful information pertaining to Windsor Secondary. 
+                            This app is in no way maintained by the North Vancouver School District or Windsor Secondary School.
+                             </span>
+                            <span class="author">Developed by Chris Bolton, Windsor Secondary student</span>
+                        </div>
+                        <div class="content-container app-contact web-data" >
+                            <span class="desc">Feature suggestions, bug reports, or other feedback is welcomed.</span>
+                            <a href="mailto:support@codeandconfusion.com" class="app-email" >support@codeandconfusion.com</a>
+                            <a href="http://twitter.com/WSTimetable" class="app-twitter item-web">@WSTimetable</a>
+                        </div>
+                        <div class="app-dev">
                             <span class="current-version-pre">
                                 Version:
                             </span>
                             <span class="current-version"></span>
                         </div>
-                        <div class="content-container app-desc">
-                            <span></span>
-                            <span></span>
-                        </div>
-                        <div class="content-container app-contact">
-                            <span class="app-review"></span>
-                            <span class="app-twitter"></span>
-                            <span class="app-email"></span>
-                        </div>
-                        <div class="app-dev">
-                            
-                        </div>
                     </div>
 
                 </div>
-            </div>
+               
         </div>
         <!-- maybe in the future I should condense this list... -->
         <script src="cordova.js"></script>
