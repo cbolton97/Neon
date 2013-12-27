@@ -5,7 +5,7 @@
 .schedule-header{
 	margin:10px 0 0 0;
 	padding:0;
-	background:#EEE;
+	background:#F2F2F2;
 	
 }
 	.schedule-header span{
@@ -73,12 +73,19 @@
 }
 
 
-.error-message-today,
-.error-message-tomorrow{
+.error-message{
 	display:block;
 	padding:10px;
-	font:100% "platform light", sans-serif;
+    text-align:center;
+    text-transform:uppercase;
+	font:bold 100% "platform thin", sans-serif;
+	color:#000;
+}
+.error-message span{
+	display:block;
+	padding:10px 5px;
+    text-transform:none;
+	font:90% "platform light", sans-serif;
 	color:#333;
 }
-
 
