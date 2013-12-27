@@ -1,7 +1,7 @@
 //main func for 'rotation' 
 function loadTimeTable(structure, order, time) {
 	$('#timetable-'+ time +'-loader').load('./core/styling/templates/timetable-ui.html #' + structure, function() {
-		if (!(structure === "none")) {
+		if (!(structure === "0")) {
 		    if (order === "1" || order === "2" || order === "3") {
 		        var day = "1";
 		        switch (order) {
@@ -36,7 +36,7 @@ function loadTimeTable(structure, order, time) {
 		    }
 		    $(this).find('.schedule-header-day').html("Day " + day);
 		} else {
-		    error(time, "No school.");
+		    error(time, "No school scheduled for " + time);
 		}
 		
 		if(time === "today"){

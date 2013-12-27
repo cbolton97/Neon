@@ -50,10 +50,13 @@
 /Users/user/Dev/Neon/platforms/android/assets/www/core/styling/fonts/font.css \
 /Users/user/Dev/Neon/platforms/android/assets/www/core/styling/fonts/android/Roboto-Light.ttf \
 /Users/user/Dev/Neon/platforms/android/assets/www/core/styling/fonts/android/Roboto-Thin.ttf \
+/Users/user/Dev/Neon/platforms/android/assets/www/core/styling/icon/icon.png \
+/Users/user/Dev/Neon/platforms/android/assets/www/core/styling/icon/icon_1164.png \
 /Users/user/Dev/Neon/platforms/android/assets/www/core/styling/icon/icon_1170.png \
 /Users/user/Dev/Neon/platforms/android/assets/www/core/styling/icon/icon_2222.png \
 /Users/user/Dev/Neon/platforms/android/assets/www/core/styling/icon/icon_trans.pdn \
 /Users/user/Dev/Neon/platforms/android/assets/www/core/styling/icon/icon_trans.png \
+/Users/user/Dev/Neon/platforms/android/assets/www/core/styling/images/BcRFRXtIcAMZD6L.png \
 /Users/user/Dev/Neon/platforms/android/assets/www/core/styling/images/ic_action_refresh.png \
 /Users/user/Dev/Neon/platforms/android/assets/www/core/styling/images/LogoHeader-fixed.png \
 /Users/user/Dev/Neon/platforms/android/assets/www/core/styling/images/LogoHeader-min.pdn \

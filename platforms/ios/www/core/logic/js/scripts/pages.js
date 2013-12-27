@@ -1,14 +1,15 @@
 //each func represents a page in the ui
 var pageList = {
     rotation: function () {
+        createDate();
         $.getJSON('./core/logic/db/rotation.json', function (data) {
-
+     
             for (var r in data.rotations) {
-                if (data.rotations[r].date === today_date) {
+                if (data.rotations[r].date === window.today) {
                     var today = data.rotations[r];
                     loadTimeTable(today.structure, today.order, "today");
                 }
-                if (data.rotations[r].date === tomorrow_date) {
+                if (data.rotations[r].date === window.tomorrow) {
                     var tomorrow = data.rotations[r];
                     loadTimeTable(tomorrow.structure, tomorrow.order, "tomorrow");
                 }
@@ -18,10 +19,10 @@ var pageList = {
             var checkOutputTomorrow = _.isUndefined(tomorrow);
 
             if (checkOutputToday) {
-                error("today", "Today's schedule could not be loaded.")
+                error("today", "Today's schedule could not be loaded")
             }
             if (checkOutputTomorrow) {
-                error("tomorrow", "Tomorrow's schedule could not be loaded.")
+                error("tomorrow", "Tomorrow's schedule could not be loaded")
             }
         });
     },

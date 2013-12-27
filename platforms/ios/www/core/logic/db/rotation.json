@@ -4,29 +4,14 @@
 "rotations":[
 	
 	{
-		"date":"December 22, 2013",
-		"structure":"normal",
-		"order":"3"
-	},
-	{
-		"date":"December 23, 2013",
-		"structure":"normal",
-		"order":"7"
-	},
-	{
-		"date":"December 24, 2013",
-		"structure":"normal",
-		"order":"1"
-	},
-	{
-		"date":"December 25, 2013",
-		"structure":"normal",
-		"order":"5"
-	},
-	{
 		"date":"December 26, 2013",
-		"structure":"normal",
+		"structure":"8_1",
 		"order":"2"
+	},
+	{
+		"date":"December 27, 2013",
+		"structure":"0",
+		"order":"6"
 	}
 	
 ]}

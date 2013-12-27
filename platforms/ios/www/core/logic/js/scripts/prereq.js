@@ -1,4 +1,7 @@
-﻿//global used to determine user input type ie touchstart
+﻿
+
+
+//global used to determine user input type ie touchstart
 var trigger = "click";
 
 
@@ -13,26 +16,30 @@ function onResume() {
 
 
 //creates time, space, and quite possibly the universe.
-var days = new Array('Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday');
-var months = new Array('January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December');
 
-var today = new Date();
-var todayDate = ((today.getDate() < 10) ? "0" : "") + today.getDate();
-function fourdigits(number) {
-    return (number < 1000) ? number + 1900 : number;
+window.today;
+window.tomorrow;
+function createDate() {
+    var days = new Array('Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday');
+    var months = new Array('January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December');
+
+    var today = new Date();
+    var todayDate = ((today.getDate() < 10) ? "0" : "") + today.getDate();
+    function fourdigits(number) {
+        return (number < 1000) ? number + 1900 : number;
+    }
+
+    var tomorrow = new Date(new Date().getTime() + 24 * 60 * 60 * 1000)
+    var tomorrowDate = ((tomorrow.getDate() < 10) ? "0" : "") + tomorrow.getDate();
+    function fourdigits(number) {
+        return (number < 1000) ? number + 1900 : number;
+    }
+
+    var today_weekday = days[today.getDay()];
+
+    window.today = months[today.getMonth()] + " " + todayDate + ", " + (fourdigits(today.getYear()));
+    window.tomorrow = months[tomorrow.getMonth()] + " " + tomorrowDate + ", " + (fourdigits(tomorrow.getYear()));
 }
-
-var tomorrow = new Date(new Date().getTime() + 24 * 60 * 60 * 1000)
-var tomorrowDate = ((tomorrow.getDate() < 10) ? "0" : "") + tomorrow.getDate();
-function fourdigits(number) {
-    return (number < 1000) ? number + 1900 : number;
-}
-
-var today_weekday = days[today.getDay()];
-
-var today_date = months[today.getMonth()] + " " + todayDate + ", " + (fourdigits(today.getYear()));
-var tomorrow_date = months[tomorrow.getMonth()] + " " + tomorrowDate + ", " + (fourdigits(tomorrow.getYear()));
-
 
 //error handling
 function error(location, message) {
@@ -41,12 +48,14 @@ function error(location, message) {
             $('#timetable-today-loader').load('./core/styling/templates/timetable-ui.html #error-today', function () {
 
                 $('.error-message-today').html(message);
+                $('.error-message-today').append("<span>Please refer to the school's website for the most up to date information.</span>");
             });
             break;
         case "tomorrow":
             $('#timetable-tomorrow-loader').load('./core/styling/templates/timetable-ui.html #error-tomorrow', function () {
 
                 $('.error-message-tomorrow').html(message);
+                $('.error-message-tomorrow').append("<span>Please refer to the school's website for the most up to date information.</span>");
             });
             break;
     }
