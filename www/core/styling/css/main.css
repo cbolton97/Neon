@@ -180,7 +180,7 @@ a:hover {
 }
 .app-desc {
      display:block;
-     margin:10px;
+     margin:10px auto;
      
 }
 .desc{
@@ -196,7 +196,7 @@ a:hover {
     font:90% "platform light", sans-serif;
 }
 .app-contact {
-    margin:5px 10px;
+    margin:5px auto;
     padding:0 0 5px 0;
 }
 .app-contact a {
