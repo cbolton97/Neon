@@ -1,4 +1,12 @@
 ﻿/*THIS WONT SHOW UP*/
+@font-face {
+    font-family: "platform thin";
+    src: url("../fonts/android/Roboto-Thin.ttf") format("opentype");   
+    }
+@font-face {
+    font-family: "platform light";
+    src: url("../fonts/android/Roboto-Light.ttf") format("opentype");   
+    }
 #wrapper-header{
 	margin:0;
 	width:100%;

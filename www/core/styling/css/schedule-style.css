@@ -34,7 +34,8 @@
 .schedule-block{
 	margin:0;
 	float:left;
-	font:300% "platform thin", "Helvetica Neue Thin", sans-serif;
+	font:300% "platform thin", "Helvetica Neue UltraLight", sans-serif;
+    font-weight:100;
 	color:#444;
 }
 .schedule-info {
@@ -71,6 +72,7 @@
     text-align:center;
     text-transform:uppercase;
 	font:bold 100% "platform thin", "Helvetica Neue UltraLight", sans-serif;
+     font-weight:100;
 	color:#000;
 }
 .error-message span{
