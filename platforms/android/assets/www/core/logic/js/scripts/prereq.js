@@ -81,7 +81,6 @@ $('.header-refresh').bind(trigger, function (event) {
     loadPage(refreshTarget, "refresh button");
     $('.header-refresh').animateRotate(360, 1000, "linear");
     event.preventDefault();
-    navigator.notification.vibrate(10);
 });
 //watches list-drop down
 $('.staff-list ul').on(trigger, 'li', function (event) {

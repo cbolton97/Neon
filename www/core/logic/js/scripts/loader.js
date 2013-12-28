@@ -6,7 +6,6 @@ $('#wrapper-nav ul a').bind(trigger, function (event) {
 	loadPage(requestedPage, 'nav');
 	event.returnValue = false;
 	event.preventDefault();
-	navigator.notification.vibrate(10);
 });
 
 

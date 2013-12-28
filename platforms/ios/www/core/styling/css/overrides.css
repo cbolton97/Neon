@@ -1,10 +1,21 @@
-﻿#wrapper-nav{
+﻿#wrapper-header{
+	margin:0;
+	padding:20px 0 0 0; /*FIX THIS*/
+	width:100%;
+	height:auto;
+	background:#238C49;
+}
+
+.header-container {
+      
+}
+#wrapper-nav{
 	position:fixed;
 	bottom:0;
 }
 
 #content-container{
 	margin:0;
-	padding:3em 0 30px 0;
+	padding:3.5em 0 40px 0;
     
 }

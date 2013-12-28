@@ -8,6 +8,17 @@
     src: url("../fonts/android/Roboto-Light.ttf") format("opentype");   
     }
 
+#wrapper-header{
+	margin:0;
+	width:100%;
+	height:auto;
+	background:#238C49;
+}
+
+.header-container {
+      border-bottom:3px solid #1A6B36;
+}
+
 #content-container{
 	margin:0;
 	padding:5.2em 0 30px 0;
