@@ -230,6 +230,13 @@ a:hover {
 .current-version {
     font-size:120%;
 }
+.legal {
+    width:55%;
+    margin:5px auto;
+    display:block;
+    font-size:80%;
+
+}
 
 /* Color Palette
 link green: #007F0E
