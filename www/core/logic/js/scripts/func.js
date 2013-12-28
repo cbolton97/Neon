@@ -58,6 +58,7 @@ function displayListItem(itemType, source) {
             "</span><div class='item-link-container'><a href='mailto:" + source.email +
             "' class='item-email'>Email: " + source.email + "</a> </div></li>");
             break;
+
         case "teachers":
             var teachersWebCheck = _.isUndefined(source.website);
 
@@ -69,6 +70,7 @@ function displayListItem(itemType, source) {
                     "</span><div class='item-link-container'><a href='mailto:" + source.email + "' class='item-email'> Email: " + source.email + "</a></div></li>");
             }
             break;
+
         case "support":
             var supportWebCheck = _.isUndefined(source.website);
 
@@ -84,8 +86,17 @@ function displayListItem(itemType, source) {
             }
             break;
 
-        case "sites":
-            $('.sites-list-data').append("<li><a class='item-web' href='" + source.website + "'>" + source.name + "</a></li>");
+        case "academics":
+            $('.academics-list-data').append("<li><a class='item-program item-web' href='" + source.website + "'>" + source.name + "</a></li>");
+            break;
+        case "athletics":
+            $('.athletics-list-data').append("<li><a class='item-program item-web' href='" + source.website + "'>" + source.name + "</a></li>");
+            break;
+        case "arts":
+            $('.arts-list-data').append("<li><a class='item-program item-web' href='" + source.website + "'>" + source.name + "</a></li>");
+            break;
+        case "workexperience":
+            $('.workexperience-list-data').append("<li><a class='item-program item-web' href='" + source.website + "'>" + source.name + "</a></li>");
             break;
     }
 }

@@ -112,7 +112,7 @@ a:hover {
 	color:#007F0E;
 }
 .content-container {
-    margin:-10px auto 0 auto;
+    margin:10px auto 0 auto;
 	padding:0;
 	width:95%;
 	background:#FFF;
@@ -203,7 +203,7 @@ a:hover {
     display:block;
     margin:5px auto;
     padding:10px;
-    width:70%;
+    width:60%;
     text-align:center;
     background:#F5F5F5;
     color:#333;

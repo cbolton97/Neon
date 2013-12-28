@@ -1,7 +1,7 @@
 ﻿{
 "title":"Sites",
 "content":"Current Windsor sites.",
-"Academics":[
+"academics":[
 	{
 		"name":"Graduating Class",
 		"website":"http://windsorgradinfo.webs.com/"
@@ -15,24 +15,14 @@
 		"website":"https://my.sd44.ca/"
 	}
 ],
-"Athletics":[
+
+"athletics":[
 	{
 		"name":"Dukes Athletics",
 		"website":"http://dukesathletics.ca/"
 	}
 ],
-
-"Work Experience":[
-	{
-		"name":"Work Experience Blog",
-		"website":"http://windsorworkexperience.blogspot.ca/"
-	},
-	{
-		"name":"WEX Course Materials",
-		"website":"http://sianoliver.weebly.com/work-experience.html"
-	}
-],
-"Arts":[
+"arts":[
 	{
 		"name":"Choir",
 		"website":"https://sites.google.com/site/adamkozak/windsorchoirs2"
@@ -45,6 +35,17 @@
 		"name":"Arts",
 		"website":"http://studiozwindsor.com/"
 	}
+],
+"workexperience":[
+	{
+		"name":"Work Experience Blog",
+		"website":"http://windsorworkexperience.blogspot.ca/"
+	},
+	{
+		"name":"WEX Course Materials",
+		"website":"http://sianoliver.weebly.com/work-experience.html"
+	}
 ]
+
 	
 }
