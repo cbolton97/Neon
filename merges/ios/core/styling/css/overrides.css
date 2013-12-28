@@ -1,0 +1,10 @@
+﻿#wrapper-nav ul{
+	position:fixed;
+	bottom:0;
+}
+
+#content-container{
+	margin:0;
+	padding:3em 0 30px 0;
+    
+}
