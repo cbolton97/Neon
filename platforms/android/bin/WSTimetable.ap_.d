@@ -61,6 +61,11 @@
 /Users/user/Dev/Neon/platforms/android/assets/www/core/styling/icon/ios/icon57.png \
 /Users/user/Dev/Neon/platforms/android/assets/www/core/styling/icon/ios/icon60.png \
 /Users/user/Dev/Neon/platforms/android/assets/www/core/styling/icon/ios/icon72.png \
+/Users/user/Dev/Neon/platforms/android/assets/www/core/styling/icon/ios/icons \
+/Users/user/Dev/Neon/platforms/android/assets/www/core/styling/icon/ios/icons/icon-72.png \
+/Users/user/Dev/Neon/platforms/android/assets/www/core/styling/icon/ios/icons/icon-72@2x.png \
+/Users/user/Dev/Neon/platforms/android/assets/www/core/styling/icon/ios/icons/icon.png \
+/Users/user/Dev/Neon/platforms/android/assets/www/core/styling/icon/ios/icons/icon@2x.png \
 /Users/user/Dev/Neon/platforms/android/assets/www/core/styling/icon/old/icon1200.png \
 /Users/user/Dev/Neon/platforms/android/assets/www/core/styling/icon/old/icon36.png \
 /Users/user/Dev/Neon/platforms/android/assets/www/core/styling/icon/old/icon48.png \
