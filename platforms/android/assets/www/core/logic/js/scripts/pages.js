@@ -74,6 +74,7 @@ var pageList = {
         });
     },
     about: function () {
+        window.scrollTo(0, 0);
         $.getJSON('./core/logic/db/about.json', function (data) {
             $('.current-version').html(data.version);
 

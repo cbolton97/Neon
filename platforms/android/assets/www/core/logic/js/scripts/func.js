@@ -53,21 +53,21 @@ function loadTimeTable(structure, order, time) {
 function displayListItem(itemType, source) {
     switch (itemType) {
         case "admin":
-            $('.admin-list-data').append("<li> <span class='item-title'>" + source.title +
-            "</span><span class='item-name'> " + source.name +
+            $('.admin-list-data').append("<li> <span class='font-light item-title'>" + source.title +
+            "</span><span class='item-name font-light'> " + source.name +
             "</span><div class='item-link-container'><a href='mailto:" + source.email +
-            "' class='item-email'>Email: " + source.email + "</a> </div></li>");
+            "' class='item-email font-light'>Email: " + source.email + "</a> </div></li>");
             break;
 
         case "teachers":
             var teachersWebCheck = _.isUndefined(source.website);
 
             if (!(teachersWebCheck)) {
-                $('.teachers-list-data').append("<li><span class='item-name'>" + source.name + "</span><div class='item-link-container'><a href='mailto:" +
-                     source.email + "' class='item-email'>Email: " + source.email + "</a><br /><a class='item-web' href='" + source.website + "'>Visit their website</a></div></li>");
+                $('.teachers-list-data').append("<li><span class='font-light item-name'>" + source.name + "</span><div class='item-link-container'><a href='mailto:" +
+                     source.email + "' class='font-light item-email'>Email: " + source.email + "</a><br /><a class='font-light item-web' href='" + source.website + "'>Visit their website</a></div></li>");
             } else {
-                $('.teachers-list-data').append("<li><span class='item-name'>" + source.name +
-                    "</span><div class='item-link-container'><a href='mailto:" + source.email + "' class='item-email'> Email: " + source.email + "</a></div></li>");
+                $('.teachers-list-data').append("<li><span class='item-name font-light'>" + source.name +
+                    "</span><div class='item-link-container'><a href='mailto:" + source.email + "' class='font-light item-email'> Email: " + source.email + "</a></div></li>");
             }
             break;
 
@@ -75,28 +75,28 @@ function displayListItem(itemType, source) {
             var supportWebCheck = _.isUndefined(source.website);
 
             if (!(supportWebCheck)) {
-                $('.support-list-data').append("<li> <span class='item-title'>" + source.title +
-                    "</span><br /> <span class='item-name'>" + source.name + "</span><div class='item-link-container'><a href='mailto:" +
-                    source.email + "' class='item-email'>Email: " + source.email + "</a><br /><a class='item-web' href='" + source.website + "'>Visit their website</a></div></li>");
+                $('.support-list-data').append("<li> <span class='item-title font-light'>" + source.title +
+                    "</span><br /> <span class='item-name font-light'>" + source.name + "</span><div class='item-link-container'><a href='mailto:" +
+                    source.email + "' class='item-email font-light'>Email: " + source.email + "</a><br /><a class='item-web font-light' href='" + source.website + "'>Visit their website</a></div></li>");
             } else {
                
-                $('.support-list-data').append("<li> <span class='item-title'>" + source.title +
-                    "</span><br /> <span class='item-name'>" + source.name + "</span><div class='item-link-container'><a href='mailto:" + source.email +
-                    "' class='item-email'>Email: " + source.email + "</a></div></li>");
+                $('.support-list-data').append("<li> <span class='item-title font-light'>" + source.title +
+                    "</span><br /> <span class='item-name font-light'>" + source.name + "</span><div class='item-link-container'><a href='mailto:" + source.email +
+                    "' class='item-email font-light'>Email: " + source.email + "</a></div></li>");
             }
             break;
 
         case "academics":
-            $('.academics-list-data').append("<li><a class='item-program item-web' href='" + source.website + "'>" + source.name + "</a></li>");
+            $('.academics-list-data').append("<li><a class='font-light item-program item-web' href='" + source.website + "'>" + source.name + "</a></li>");
             break;
         case "athletics":
-            $('.athletics-list-data').append("<li><a class='item-program item-web' href='" + source.website + "'>" + source.name + "</a></li>");
+            $('.athletics-list-data').append("<li><a class='font-light item-program item-web' href='" + source.website + "'>" + source.name + "</a></li>");
             break;
         case "arts":
-            $('.arts-list-data').append("<li><a class='item-program item-web' href='" + source.website + "'>" + source.name + "</a></li>");
+            $('.arts-list-data').append("<li><a class='font-light item-program item-web' href='" + source.website + "'>" + source.name + "</a></li>");
             break;
         case "workexperience":
-            $('.workexperience-list-data').append("<li><a class='item-program item-web' href='" + source.website + "'>" + source.name + "</a></li>");
+            $('.workexperience-list-data').append("<li><a class='font-light item-program item-web' href='" + source.website + "'>" + source.name + "</a></li>");
             break;
     }
 }

@@ -90,12 +90,9 @@ $('.staff-list ul').on(trigger, 'li', function (event) {
     if (panelTest) {
         $(this).find('.item-link-container').hide();
         $('.item-link-container').hide();
-        $('.list-data li').css('background', 'transparent');
     } else {
         $('.item-link-container').hide();
-        $('.list-data li').css('background', 'transparent');
         $(this).find('.item-link-container').show();
-        $(this).css('background', '#F5F5F5');
     }
 });
 

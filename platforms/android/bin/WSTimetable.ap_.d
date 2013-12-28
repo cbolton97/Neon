@@ -55,11 +55,8 @@
 /Users/user/Dev/Neon/platforms/android/assets/www/core/styling/icon/icon_2222.png \
 /Users/user/Dev/Neon/platforms/android/assets/www/core/styling/icon/icon_trans.pdn \
 /Users/user/Dev/Neon/platforms/android/assets/www/core/styling/icon/icon_trans.png \
-/Users/user/Dev/Neon/platforms/android/assets/www/core/styling/images/BcRFRXtIcAMZD6L.png \
 /Users/user/Dev/Neon/platforms/android/assets/www/core/styling/images/ic_action_refresh.png \
 /Users/user/Dev/Neon/platforms/android/assets/www/core/styling/images/LogoHeader-fixed.png \
-/Users/user/Dev/Neon/platforms/android/assets/www/core/styling/images/LogoHeader-min.pdn \
-/Users/user/Dev/Neon/platforms/android/assets/www/core/styling/images/LogoHeader.png \
 /Users/user/Dev/Neon/platforms/android/assets/www/core/styling/templates/timetable-ui.html \
 /Users/user/Dev/Neon/platforms/android/assets/www/plugins/org.apache.cordova.device \
 /Users/user/Dev/Neon/platforms/android/assets/www/plugins/org.apache.cordova.inappbrowser \
