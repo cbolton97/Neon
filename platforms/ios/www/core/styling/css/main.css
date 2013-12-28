@@ -112,7 +112,7 @@ a:hover {
 	color:#007F0E;
 }
 .content-container {
-    margin:-10px auto 0 auto;
+    margin:10px auto 0 auto;
 	padding:0;
 	width:95%;
 	background:#FFF;
@@ -180,7 +180,7 @@ a:hover {
 }
 .app-desc {
      display:block;
-     margin:10px;
+     margin:10px auto;
      
 }
 .desc{
@@ -196,14 +196,14 @@ a:hover {
     font:90% "platform light", sans-serif;
 }
 .app-contact {
-    margin:5px 10px;
+    margin:5px auto;
     padding:0 0 5px 0;
 }
 .app-contact a {
     display:block;
     margin:5px auto;
     padding:10px;
-    width:70%;
+    width:60%;
     text-align:center;
     background:#F5F5F5;
     color:#333;

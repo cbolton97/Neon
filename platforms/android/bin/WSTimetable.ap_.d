@@ -47,7 +47,6 @@
 /Users/user/Dev/Neon/platforms/android/assets/www/core/styling/css/overrides.css \
 /Users/user/Dev/Neon/platforms/android/assets/www/core/styling/css/schedule-style.css \
 /Users/user/Dev/Neon/platforms/android/assets/www/core/styling/fonts/android \
-/Users/user/Dev/Neon/platforms/android/assets/www/core/styling/fonts/font.css \
 /Users/user/Dev/Neon/platforms/android/assets/www/core/styling/fonts/android/Roboto-Light.ttf \
 /Users/user/Dev/Neon/platforms/android/assets/www/core/styling/fonts/android/Roboto-Thin.ttf \
 /Users/user/Dev/Neon/platforms/android/assets/www/core/styling/icon/icon.png \

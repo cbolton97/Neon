@@ -1,1 +1,9 @@
-﻿/*DONT WRITE TO THIS*/
+﻿
+@font-face {
+    font-family: "platform thin";
+    src: url("android/Roboto-Thin.ttf") format("opentype");   
+    }
+@font-face {
+    font-family: "platform light";
+    src: url("android/Roboto-Light.ttf") format("opentype");   
+    }

@@ -30,17 +30,17 @@ var pageList = {
         $('.list-data').html("");
         $.getJSON('./core/logic/db/staff.json', function (data) {
 
-            for (a in data.admin) {
+            for (var a in data.admin) {
                 var source = data.admin[a];
                 displayListItem("admin", source);
             }
 
-            for (t in data.teachers) {
+            for (var t in data.teachers) {
                 var source = data.teachers[t];
                 displayListItem("teachers", source);
             }
 
-            for (s in data.support) {
+            for (var s in data.support) {
                 var source = data.support[s];
                 displayListItem("support", source);
             }
@@ -50,10 +50,26 @@ var pageList = {
         $('.list-data').html("");
         $.getJSON('./core/logic/db/sites.json', function (data) {
 
-            for (b in data.sites) {
-                var source = data.sites[b];
-                displayListItem("sites", source);
+            for (var ac in data.academics) {
+                var source = data.academics[ac];
+                displayListItem("academics", source);
             }
+
+            for (var at in data.athletics) {
+                var source = data.athletics[at];
+                displayListItem("athletics", source);
+            }
+
+            for (var ar in data.arts) {
+                var source = data.arts[ar];
+                displayListItem("arts", source);
+            }
+
+            for (var w in data.workexperience) {
+                var source = data.workexperience[w];
+                displayListItem("workexperience", source);
+            }
+
 
         });
     },
