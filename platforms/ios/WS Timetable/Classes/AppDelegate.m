@@ -34,6 +34,7 @@
 
 @synthesize window, viewController;
 
+
 - (id)init
 {
     /** If you need to do any extra app-specific initialization, you can do it here
@@ -51,7 +52,7 @@
         NSURLCache* sharedCache = [[[NSURLCache alloc] initWithMemoryCapacity:cacheSizeMemory diskCapacity:cacheSizeDisk diskPath:@"nsurlcache"] autorelease];
 #endif
     [NSURLCache setSharedURLCache:sharedCache];
-
+    
     self = [super init];
     return self;
 }
@@ -63,7 +64,9 @@
  */
 - (BOOL)application:(UIApplication*)application didFinishLaunchingWithOptions:(NSDictionary*)launchOptions
 {
+    
     CGRect screenBounds = [[UIScreen mainScreen] bounds];
+    
 
 #if __has_feature(objc_arc)
         self.window = [[UIWindow alloc] initWithFrame:screenBounds];
@@ -87,7 +90,8 @@
 
     self.window.rootViewController = self.viewController;
     [self.window makeKeyAndVisible];
-
+    
+    
     return YES;
 }
 
