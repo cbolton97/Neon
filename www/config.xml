@@ -1,10 +1,10 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.codeandconfusion.neon" version="0.9.5" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
-    <name>WS Timetable</name>
+<widget id="com.codeandconfusion.neon" version="0.9.9" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+    <name>WS Companion</name>
     <description>
         Designed to help students manage their class schedule, as well as other useful information for Windsor Secondary School.
     </description>
-    <author email="chris.bolton97@gmail.com" href="http://codeandconfusion.com/app">
+    <author email="codeandconfusion@gmail.com" href="http://codeandconfusion.com/wscompanion">
         Code and Confusion
     </author>
     <feature name="http://api.phonegap.com/1.0/device" />
