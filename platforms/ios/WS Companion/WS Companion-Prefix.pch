@@ -17,7 +17,7 @@
  under the License.
  */
 //
-// Prefix header for all source files of the 'WS Timetable' target in the 'WS Timetable' project
+// Prefix header for all source files of the 'WS Companion' target in the 'WS Companion' project
 //
 
 #ifdef __OBJC__

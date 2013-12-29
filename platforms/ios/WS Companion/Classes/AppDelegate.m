@@ -19,7 +19,7 @@
 
 //
 //  AppDelegate.m
-//  WS Timetable
+//  WS Companion
 //
 //  Created by ___FULLUSERNAME___ on ___DATE___.
 //  Copyright ___ORGANIZATIONNAME___ ___YEAR___. All rights reserved.
@@ -33,7 +33,6 @@
 @implementation AppDelegate
 
 @synthesize window, viewController;
-
 
 - (id)init
 {
@@ -52,7 +51,7 @@
         NSURLCache* sharedCache = [[[NSURLCache alloc] initWithMemoryCapacity:cacheSizeMemory diskCapacity:cacheSizeDisk diskPath:@"nsurlcache"] autorelease];
 #endif
     [NSURLCache setSharedURLCache:sharedCache];
-    
+
     self = [super init];
     return self;
 }
@@ -64,9 +63,7 @@
  */
 - (BOOL)application:(UIApplication*)application didFinishLaunchingWithOptions:(NSDictionary*)launchOptions
 {
-    
     CGRect screenBounds = [[UIScreen mainScreen] bounds];
-    
 
 #if __has_feature(objc_arc)
         self.window = [[UIWindow alloc] initWithFrame:screenBounds];
@@ -90,13 +87,12 @@
 
     self.window.rootViewController = self.viewController;
     [self.window makeKeyAndVisible];
-    
-    
+
     return YES;
 }
 
 // this happens while we are running ( in the background, or from within our own app )
-// only valid if WS Timetable-Info.plist specifies a protocol to handle
+// only valid if WS Companion-Info.plist specifies a protocol to handle
 - (BOOL)application:(UIApplication*)application handleOpenURL:(NSURL*)url
 {
     if (!url) {

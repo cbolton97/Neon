@@ -19,7 +19,7 @@
 
 //
 //  MainViewController.h
-//  WS Timetable
+//  WS Companion
 //
 //  Created by ___FULLUSERNAME___ on ___DATE___.
 //  Copyright ___ORGANIZATIONNAME___ ___YEAR___. All rights reserved.
@@ -170,6 +170,5 @@
 {
     return [super execute:command];
 }
-
 
 @end

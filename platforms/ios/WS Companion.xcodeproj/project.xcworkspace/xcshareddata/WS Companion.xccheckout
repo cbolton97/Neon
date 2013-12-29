@@ -5,19 +5,19 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>0BD5CF75-E4EF-4C10-A78F-6C540C9B3C93</string>
+	<string>F5E580BB-FCCF-4AC2-95A0-7195EA156C15</string>
 	<key>IDESourceControlProjectName</key>
-	<string>WS Timetable</string>
+	<string>WS Companion</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>3671E0FF-E952-4846-973E-4E745DF006E9</key>
+		<key>82B5A231-F734-4B49-A66A-7F650F991E50</key>
 		<string>https://github.com/cbolton97/Neon.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>platforms/ios/WS Timetable.xcodeproj/project.xcworkspace</string>
+	<string>platforms/ios/WS Companion.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>3671E0FF-E952-4846-973E-4E745DF006E9</key>
+		<key>82B5A231-F734-4B49-A66A-7F650F991E50</key>
 		<string>../../../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
@@ -25,14 +25,14 @@
 	<key>IDESourceControlProjectVersion</key>
 	<integer>110</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>3671E0FF-E952-4846-973E-4E745DF006E9</string>
+	<string>82B5A231-F734-4B49-A66A-7F650F991E50</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>3671E0FF-E952-4846-973E-4E745DF006E9</string>
+			<string>82B5A231-F734-4B49-A66A-7F650F991E50</string>
 			<key>IDESourceControlWCCName</key>
 			<string>Neon</string>
 		</dict>

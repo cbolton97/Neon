@@ -2,7 +2,7 @@
 <widget id="com.codeandconfusion.neon" version="0.9.9" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
     <name>WS Companion</name>
     <description>
-        Designed to help students manage their class schedule, as well as other useful information for Windsor Secondary School.
+        WS Companion provides Windsor Secondary Students with essential information regarding class timetables, teacher contact information, and important sites and blogs maintained by SD44 staff. This application allows students to better organize their school schedule with an up-to-date view of the day’s block rotation. It also gives students a mobile-friendly method of contacting teachers through their email, or visiting their website. 
     </description>
     <author email="codeandconfusion@gmail.com" href="http://codeandconfusion.com/wscompanion">
         Code and Confusion

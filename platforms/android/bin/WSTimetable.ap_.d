@@ -51,8 +51,12 @@
 /Users/user/Dev/Neon/platforms/android/assets/www/core/styling/fonts/android/Roboto-Thin.ttf \
 /Users/user/Dev/Neon/platforms/android/assets/www/core/styling/icon/android \
 /Users/user/Dev/Neon/platforms/android/assets/www/core/styling/icon/ios \
+/Users/user/Dev/Neon/platforms/android/assets/www/core/styling/icon/splash \
 /Users/user/Dev/Neon/platforms/android/assets/www/core/styling/icon/android/icon-base.pdn \
 /Users/user/Dev/Neon/platforms/android/assets/www/core/styling/icon/android/icon1200.png \
+/Users/user/Dev/Neon/platforms/android/assets/www/core/styling/icon/android/icon36.png \
+/Users/user/Dev/Neon/platforms/android/assets/www/core/styling/icon/android/icon48.png \
+/Users/user/Dev/Neon/platforms/android/assets/www/core/styling/icon/android/icon72.png \
 /Users/user/Dev/Neon/platforms/android/assets/www/core/styling/icon/android/icon96.png \
 /Users/user/Dev/Neon/platforms/android/assets/www/core/styling/icon/ios/icon-base.pdn \
 /Users/user/Dev/Neon/platforms/android/assets/www/core/styling/icon/ios/icon1024.png \
@@ -67,6 +71,9 @@
 /Users/user/Dev/Neon/platforms/android/assets/www/core/styling/icon/ios/icons/icon-72@2x.png \
 /Users/user/Dev/Neon/platforms/android/assets/www/core/styling/icon/ios/icons/icon.png \
 /Users/user/Dev/Neon/platforms/android/assets/www/core/styling/icon/ios/icons/icon@2x.png \
+/Users/user/Dev/Neon/platforms/android/assets/www/core/styling/icon/splash/iphone4-half.png \
+/Users/user/Dev/Neon/platforms/android/assets/www/core/styling/icon/splash/iphone4.png \
+/Users/user/Dev/Neon/platforms/android/assets/www/core/styling/icon/splash/iphone5.png \
 /Users/user/Dev/Neon/platforms/android/assets/www/core/styling/images/ic_action_refresh.png \
 /Users/user/Dev/Neon/platforms/android/assets/www/core/styling/images/LogoHeader-fixed.png \
 /Users/user/Dev/Neon/platforms/android/assets/www/core/styling/templates/timetable-ui.html \
