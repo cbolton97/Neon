@@ -1,6 +1,7 @@
 //each func represents a page in the ui
 var pageList = {
     rotation: function () {
+        window.scrollTo(0, 0);
         createDate();
         $.getJSON('./core/logic/db/rotation.json', function (data) {
      
