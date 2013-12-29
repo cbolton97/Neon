@@ -22,13 +22,6 @@ module.exports = [
         ]
     },
     {
-        "file": "plugins/org.apache.cordova.vibration/www/vibration.js",
-        "id": "org.apache.cordova.vibration.notification",
-        "merges": [
-            "navigator.notification"
-        ]
-    },
-    {
         "file": "plugins/org.apache.cordova.inappbrowser/www/InAppBrowser.js",
         "id": "org.apache.cordova.inappbrowser.InAppBrowser",
         "clobbers": [

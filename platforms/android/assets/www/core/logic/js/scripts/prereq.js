@@ -1,5 +1,12 @@
 ﻿
+//ios7 status bar fix
+function onDeviceReady() {
+    if (parseFloat(window.device.version) === 7.0) {
+        $('#wrapper-header').css('padding-top', '20px');
+    }
+}
 
+document.addEventListener('deviceready', onDeviceReady, false);
 
 //global used to determine user input type ie touchstart
 var trigger = "click";

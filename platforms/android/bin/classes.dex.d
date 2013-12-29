@@ -21,5 +21,4 @@
 /Users/user/Dev/Neon/platforms/android/bin/classes/org/apache/cordova/inappbrowser/InAppBrowser$InAppBrowserClient.class \
 /Users/user/Dev/Neon/platforms/android/bin/classes/org/apache/cordova/inappbrowser/InAppBrowser.class \
 /Users/user/Dev/Neon/platforms/android/bin/classes/org/apache/cordova/inappbrowser/InAppChromeClient.class \
-/Users/user/Dev/Neon/platforms/android/bin/classes/org/apache/cordova/vibration/Vibration.class \
 /Users/user/Dev/Neon/platforms/android/bin/dexedLibs/cordova-3.1.0-9ee9e192477c599ac3d75ed56aa29006.jar \

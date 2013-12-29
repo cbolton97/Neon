@@ -11,7 +11,7 @@
 	.schedule-header span{
 		margin:0;
 		padding:5px;
-		font:90% "platform light", "Helvetica Neue Thin", sans-serif;
+		font:90% "platform light", "HelveticaNeue-Light", sans-serif;
 		color:#007F0E;
 	}
 	.schedule-header-title{
@@ -34,7 +34,7 @@
 .schedule-block{
 	margin:0;
 	float:left;
-	font:300% "platform thin", "Helvetica Neue UltraLight", sans-serif;
+	font:300% "platform thin", "HelveticaNeue-UltraLight", sans-serif;
     font-weight:100;
 	color:#444;
 }
@@ -44,12 +44,12 @@
 }
 .schedule-points {
     display:block;
-    font:150% "platform light", "Helvetica Neue Thin", sans-serif;
+    font:150% "platform light", "HelveticaNeue-Light", sans-serif;
 	color:#333;
 }
 .schedule-dur{
     float:right;
-    font:80% "platform light", "Helvetica Neue Thin", sans-serif;
+    font:80% "platform light", "HelveticaNeue-Light", sans-serif;
 	color:#333;
 }
 .schedule-meta{
@@ -57,7 +57,7 @@
 	padding:3px 0;
 	border-top:1px solid #CCC;
 	border-bottom:1px solid #CCC;
-	font:90% "platform light", "Helvetica Neue Thin", sans-serif;
+	font:90% "platform light", "HelveticaNeue-Light", sans-serif;
 }
 .schedule-title{
 	margin:0 5px 0 0;
@@ -71,7 +71,7 @@
 	padding:10px;
     text-align:center;
     text-transform:uppercase;
-	font:bold 100% "platform thin", "Helvetica Neue UltraLight", sans-serif;
+	font:bold 100% "platform thin", "HelveticaNeue-UltraLight", sans-serif;
      font-weight:100;
 	color:#000;
 }
@@ -79,7 +79,7 @@
 	display:block;
 	padding:10px 5px;
     text-transform:none;
-	font:90% "platform light", "Helvetica Neue Thin", sans-serif;
+	font:90% "platform light", "HelveticaNeue-Light", sans-serif;
 	color:#333;
 }
 
