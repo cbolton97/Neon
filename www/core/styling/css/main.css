@@ -27,11 +27,11 @@ a:hover {
 	z-index:100;
 }
 .font-light{
-    font-family:"platform light", "Helvetica Neue Thin", sans-serif;
+    font-family:"platform light", "HelveticaNeue-Light", sans-serif;
 }
 
 .font-thin{
-    font-family:"platform thin", "Helvetica Neue UltraLight", sans-serif;
+    font-family:"platform thin", "HelveticaNeue-UltraLight", sans-serif;
      font-weight:100;
 }
 

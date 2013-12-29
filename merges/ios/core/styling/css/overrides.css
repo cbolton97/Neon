@@ -1,0 +1,25 @@
+﻿#wrapper-header{
+	margin:0;
+	width:100%;
+	height:auto;
+	background:#238C49;
+}
+
+.header-container {
+      
+}
+#wrapper-nav{
+	position:fixed;
+	bottom:0;
+}
+
+#content-container{
+	margin:0;
+	padding:3.5em 0 40px 0;
+    
+}
+
+.content-container{
+    -webkit-box-shadow:none;
+    box-shadow:none;
+}
