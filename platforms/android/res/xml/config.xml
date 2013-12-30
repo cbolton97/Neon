@@ -1,8 +1,8 @@
 <?xml version='1.0' encoding='utf-8'?>
 <widget id="com.codeandconfusion.neon" version="0.9.9" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
-    <name>Hello Cordova</name>
+    <name>WS Companion</name>
     <description>
-        A sample Apache Cordova application that responds to the deviceready event.
+        WS Companion provides Windsor Secondary Students with essential information regarding class timetables, teacher contact information, and important sites and blogs maintained by SD44 staff.
     </description>
     <access origin="*" />
     <content src="index.html" />
