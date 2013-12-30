@@ -1,7 +1,7 @@
 //main func for 'rotation' 
 function loadTimeTable(structure, order, time) {
 	$('#timetable-'+ time +'-loader').load('./core/styling/templates/timetable-ui.html #' + structure, function() {
-		if (!(structure === "0")) {
+		if (!(structure === "none")) {
 		    if (order === "1" || order === "2" || order === "3") {
 		        var day = "1";
 		        switch (order) {
