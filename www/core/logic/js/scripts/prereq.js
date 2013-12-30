@@ -1,9 +1,9 @@
-﻿
+﻿//1 PREREQ.JS
 //ios7 status bar fix
 function onDeviceReady() {
     if (parseFloat(window.device.version) === 7.0) {
         $('#wrapper-header').css('padding-top', '20px');
-        $('#content-container').css('padding-top', '3em');
+        $('#content-container').css('padding-top', '3.5em');
     }
 }
 

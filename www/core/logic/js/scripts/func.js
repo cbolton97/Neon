@@ -1,3 +1,4 @@
+//4 FUNC.JS
 //main func for 'rotation' 
 function loadTimeTable(structure, order, time) {
 	$('#timetable-'+ time +'-loader').load('./core/styling/templates/timetable-ui.html #' + structure, function() {

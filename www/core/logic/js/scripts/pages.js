@@ -1,3 +1,4 @@
+// 3 PAGES.JS
 //each func represents a page in the ui
 var pageList = {
     rotation: function () {

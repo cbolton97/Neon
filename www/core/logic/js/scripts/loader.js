@@ -1,4 +1,4 @@
-
+//2 LOADER.JS
 //watches nav for user input
 $('#wrapper-nav ul a').bind(trigger, function (event) {
 
