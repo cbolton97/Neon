@@ -72,7 +72,8 @@
     text-align:center;
     text-transform:uppercase;
 	font:bold 100% "platform thin", "HelveticaNeue-UltraLight", sans-serif;
-	color:#111;
+    font-weight:100;
+	color:#000;
 }
 .error-message span{
 	display:block;
