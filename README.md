@@ -5,6 +5,11 @@ WS Companion provides Windsor Secondary Students with essential information rega
 
 Neon is the project codename for WS Companion. More information on WS Companion can be found at [the app's download page](https://www.codeandconfusion.com/wscompanion). 
 ## Development
+### Changelog
+#### Version 1.0.0.1
+* Fixed block 4 time error
+* Fixed staff list not displaying properly
+* Various performance enhancements
 ### Updates
 A development blog can be found [here](https://www.codeandconfusion.tumblr.com/). 
 ### Production vs Development
