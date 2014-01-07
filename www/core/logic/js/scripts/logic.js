@@ -10,7 +10,7 @@ function onDeviceReady() {
 document.addEventListener('deviceready', onDeviceReady, false);
 
 //global used to determine user input type ie touchstart
-var trigger = "click";
+var trigger = "touchstart";
 
 
 //phonegap watching for app resume
@@ -83,7 +83,10 @@ $.fn.animateRotate = function (angle, duration, easing, complete) {
     });
 };
 //watches refresh button
-
+$('.header-refresh').bind('click', function (event) {
+    event.preventDefault();
+    event.returnValue = false;
+});
 $('.header-refresh').bind(trigger, function (event) {
     var refreshTarget = $(this).attr('href');
     loadPage(refreshTarget, "refresh button");
@@ -91,7 +94,7 @@ $('.header-refresh').bind(trigger, function (event) {
     event.preventDefault();
 });
 //watches list-drop down
-$('.staff-list ul').on(trigger, 'li', function (event) {
+$('.staff-list ul').on('click', 'li', function (event) {
     var childPanel = $(this).find('.item-link-container');
     var panelTest = $(childPanel).is(":visible");
 
@@ -105,7 +108,8 @@ $('.staff-list ul').on(trigger, 'li', function (event) {
 });
 
 //watches lists for web links and parses them with phonegap code
-$('.web-data').on(trigger, '.item-web', function (event) {
+
+$('.web-data').on('click', '.item-web', function (event) {
     var link = $(this).attr('href');
     var ref = window.open(link, '_system', 'location=yes');
     //insert InAppBrowser code for phonegap.
@@ -115,6 +119,10 @@ $('.web-data').on(trigger, '.item-web', function (event) {
 
 //2 LOADER.JS
 //watches nav for user input
+$('#wrapper-nav ul a').bind('click', function (event) {
+    event.returnValue = false;
+    event.preventDefault();
+});
 $('#wrapper-nav ul a').bind(trigger, function (event) {
 
 	var requestedPage = $(this).attr('href');
