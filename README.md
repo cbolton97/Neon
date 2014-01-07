@@ -1,4 +1,4 @@
-# Neon :: WS Companion :: Version 1.0.0
+# Neon :: WS Companion :: Version 1.0.0.1
 ## Project
 WS Companion provides Windsor Secondary Students with essential information regarding class timetables, teacher contact information, and important sites and blogs maintained by SD44 staff. This application allows students to better organize their school schedule with an up-to-date view of the day’s block rotation. It also gives students a mobile-friendly method of contacting teachers through their email, or visiting their website. WS Companion is in no way maintained by the North Vancouver School District or Windsor Secondary.
 
