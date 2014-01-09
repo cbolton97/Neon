@@ -4,46 +4,6 @@
 "rotations":[
 	
 	{
-		"date":"December 29, 2013",
-		"structure":"none",
-		"order":""
-	},
-	{
-		"date":"December 30, 2013",
-		"structure":"8_115",
-		"order":"7"
-	},
-	{
-		"date":"December 31, 2013",
-		"structure":"8_3",
-		"order":"1"
-	},
-	{
-		"date":"January 01, 2014",
-		"structure":"8_3",
-		"order":"5"
-	},
-	{
-		"date":"January 02, 2014",
-		"structure":"8_3",
-		"order":"2"
-	},
-	{
-		"date":"January 03, 2014",
-		"structure":"8_3",
-		"order":"6"
-	},
-	{
-		"date":"January 04, 2014",
-		"structure":"none",
-		"order":""
-	},
-	{
-		"date":"January 05, 2014",
-		"structure":"none",
-		"order":""
-	},
-	{
 		"date":"January 06, 2014",
 		"structure":"8_3",
 		"order":"1"
@@ -236,13 +196,13 @@
 	
 	{
 		"date":"February 13, 2014",
-		"structure":"8_115",
+		"structure":"8_12",
 		"order":"2"
 	},
 	
 	{
 		"date":"February 14, 2014",
-		"structure":"8_115",
+		"structure":"8_12",
 		"order":"6"
 	},
 	{
@@ -469,6 +429,306 @@
 		"date":"March 31, 2014",
 		"structure":"8_3",
 		"order":"1"
+	},
+	{
+		"date":"April 01, 2014",
+		"structure":"8_3",
+		"order":"5"
+	},
+	{
+		"date":"April 02, 2014",
+		"structure":"8_3",
+		"order":"2"
+	},
+	{
+		"date":"April 03, 2014",
+		"structure":"8_3_12",
+		"order":"6"
+	},
+	{
+		"date":"April 04, 2014",
+		"structure":"8_3",
+		"order":"3"
+	},
+	{
+		"date":"April 05, 2014",
+		"structure":"none",
+		"order":""
+	},
+	{
+		"date":"April 06, 2014",
+		"structure":"none",
+		"order":""
+	},
+	{
+		"date":"April 07, 2014",
+		"structure":"8_3",
+		"order":"7"
+	},
+	{
+		"date":"April 08, 2014",
+		"structure":"8_3",
+		"order":"1"
+	},
+	{
+		"date":"April 09, 2014",
+		"structure":"8_3",
+		"order":"5"
+	},
+	{
+		"date":"April 10, 2014",
+		"structure":"8_3",
+		"order":"2"
+	},
+	{
+		"date":"April 11, 2014",
+		"structure":"8_3",
+		"order":"6"
+	},
+	{
+		"date":"April 12, 2014",
+		"structure":"none",
+		"order":""
+	},
+	{
+		"date":"April 13, 2014",
+		"structure":"none",
+		"order":""
+	},
+	{
+		"date":"April 14, 2014",
+		"structure":"8_3",
+		"order":"1"
+	},
+	{
+		"date":"April 15, 2014",
+		"structure":"8_3",
+		"order":"5"
+	},
+	{
+		"date":"April 16, 2014",
+		"structure":"8_3",
+		"order":"2"
+	},
+	{
+		"date":"April 17, 2014",
+		"structure":"8_3",
+		"order":"6"
+	},
+	{
+		"date":"April 18, 2014",
+		"structure":"none",
+		"order":""
+	},
+	{
+		"date":"April 19, 2014",
+		"structure":"none",
+		"order":""
+	},
+	{
+		"date":"April 20, 2014",
+		"structure":"none",
+		"order":""
+	},
+	{
+		"date":"April 21, 2014",
+		"structure":"none",
+		"order":""
+	},
+	{
+		"date":"April 22, 2014",
+		"structure":"8_3",
+		"order":"1"
+	},
+	{
+		"date":"April 23, 2014",
+		"structure":"8_3",
+		"order":"5"
+	},
+	{
+		"date":"April 24, 2014",
+		"structure":"8_3",
+		"order":"2"
+	},
+	{
+		"date":"April 25, 2014",
+		"structure":"8_3",
+		"order":"6"
+	},
+	{
+		"date":"April 26, 2014",
+		"structure":"none",
+		"order":""
+	},
+	{
+		"date":"April 27, 2014",
+		"structure":"none",
+		"order":""
+	},
+	{
+		"date":"April 28, 2014",
+		"structure":"8_3",
+		"order":"1"
+	},
+	{
+		"date":"April 29, 2014",
+		"structure":"8_3",
+		"order":"5"
+	},
+	{
+		"date":"April 30, 2014",
+		"structure":"9_3",
+		"order":"2"
+	},
+	{
+		"date":"May 01, 2014",
+		"structure":"8_3",
+		"order":"6"
+	},
+	{
+		"date":"May 02, 2014",
+		"structure":"none",
+		"order":""
+	},
+	{
+		"date":"May 03, 2014",
+		"structure":"none",
+		"order":""
+	},
+	{
+		"date":"May 04, 2014",
+		"structure":"none",
+		"order":""
+	},
+	{
+		"date":"May 05, 2014",
+		"structure":"8_3",
+		"order":"7"
+	},
+	{
+		"date":"May 06, 2014",
+		"structure":"8_3",
+		"order":"1"
+	},
+	{
+		"date":"May 07, 2014",
+		"structure":"8_3",
+		"order":"5"
+	},
+	{
+		"date":"May 08, 2014",
+		"structure":"8_3",
+		"order":"2"
+	},
+	{
+		"date":"May 09, 2014",
+		"structure":"8_3",
+		"order":"6"
+	},
+	{
+		"date":"May 10, 2014",
+		"structure":"none",
+		"order":""
+	},
+	{
+		"date":"May 11, 2014",
+		"structure":"none",
+		"order":""
+	},
+	{
+		"date":"May 12, 2014",
+		"structure":"8_3",
+		"order":"1"
+	},
+	{
+		"date":"May 13, 2014",
+		"structure":"8_3",
+		"order":"5"
+	},
+	{
+		"date":"May 14, 2014",
+		"structure":"8_3",
+		"order":"2"
+	},
+	{
+		"date":"May 15, 2014",
+		"structure":"8_3",
+		"order":"6"
+	},
+	{
+		"date":"May 16, 2014",
+		"structure":"8_3",
+		"order":"3"
+	},
+	{
+		"date":"May 17, 2014",
+		"structure":"none",
+		"order":""
+	},
+	{
+		"date":"May 18, 2014",
+		"structure":"none",
+		"order":""
+	},
+	{
+		"date":"May 19, 2014",
+		"structure":"none",
+		"order":""
+	},
+	{
+		"date":"May 20, 2014",
+		"structure":"8_3",
+		"order":"1"
+	},
+	{
+		"date":"May 21, 2014",
+		"structure":"8_3",
+		"order":"5"
+	},
+	{
+		"date":"May 22, 2014",
+		"structure":"8_3",
+		"order":"2"
+	},
+	{
+		"date":"May 23, 2014",
+		"structure":"8_3",
+		"order":"6"
+	},
+	{
+		"date":"May 24, 2014",
+		"structure":"none",
+		"order":""
+	},
+	{
+		"date":"May 25, 2014",
+		"structure":"none",
+		"order":""
+	},
+	{
+		"date":"May 26, 2014",
+		"structure":"8_3",
+		"order":"1"
+	},
+	{
+		"date":"May 27, 2014",
+		"structure":"8_3",
+		"order":"5"
+	},
+	{
+		"date":"May 28, 2014",
+		"structure":"9_3",
+		"order":"2"
+	},
+	{
+		"date":"May 29, 2014",
+		"structure":"8_3",
+		"order":"6"
+	},
+	{
+		"date":"May 30, 2014",
+		"structure":"8_3",
+		"order":"2"
 	}
 
 ]}

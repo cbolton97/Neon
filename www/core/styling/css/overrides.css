@@ -21,8 +21,7 @@
 #content-container{
 	margin:0;
 	padding:5.2em 0 5px 0;
-    overflow:hidden;
-    -webkit-overflow-scrolling: touch;
+
     
 }
 .content-container{

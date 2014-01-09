@@ -2,18 +2,7 @@
 	margin:0;
 	padding:0
 }
-.schedule-header{
-	margin:10px 0 0 0;
-	padding:0;
-	background:#F2F2F2;
-	
-}
-	.schedule-header span{
-		margin:0;
-		padding:5px;
-		font:90% "platform light", "HelveticaNeue-Light", sans-serif;
-		color:#007F0E;
-	}
+
 	.schedule-header-title{
 		float:left;
 	}
