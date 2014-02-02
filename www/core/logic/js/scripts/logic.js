@@ -135,7 +135,12 @@ $('#wrapper-nav ul a').bind(trigger, function (event) {
 //main loader func, aka the router
 function loadPage(requestedPage, source){
 	$('.content-element').hide();
-	$('title').html(requestedPage);
+	
+	
+	
+	$('#title').html(requestedPage);
+	
+	
 	$('.'+ requestedPage).removeAttr('style');
 	$('.header-refresh').attr('href', requestedPage);
 	routePage(requestedPage);
