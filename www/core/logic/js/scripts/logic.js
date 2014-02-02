@@ -18,7 +18,7 @@ function onDeviceReady() {
 
 
     //global used to determine user input type ie touchstart
-    var trigger = "ontouchstart";
+    var trigger = "touchstart";
 
 
     //phonegap watching for app resume
