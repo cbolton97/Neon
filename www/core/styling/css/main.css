@@ -34,10 +34,20 @@ a:hover {
     font-family:"platform thin", "HelveticaNeue-UltraLight", sans-serif;
      font-weight:100;
 }
-
+.header-back {
+    display:block;
+    float:left;
+    margin:8px 0px 8px 2px;
+    width:32px;
+    height:32px;
+    background-image:url('../images/ic_action_back.png');
+    background-repeat:no-repeat;
+    background-size:contain;
+    display:none;
+}
 .header-logo{
-    position:absolute;
-    left:0;
+    display:block;
+    float:left;
     margin:6px auto 4px 6px;
     width:30.4px;
     height:36px;

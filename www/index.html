@@ -18,6 +18,7 @@
                 
                 <div class="fixed wrapper-element" id="wrapper-header">
                     <div class="header-container">
+                        <a href="" class="content-element header-back"></a>
                         <div class="header-logo">
                             
                         </div>
@@ -29,21 +30,29 @@
                     <!-- global nav -->
                     <div id="wrapper-nav">
                         <ul>
-                            <a class="font-light" href="rotation"><li>Rotation</li></a>
-                            <a class="font-light" href="staff" ><li>Staff</li></a>
-                            <a class="font-light" href="sites"><li>Sites</li></a>
-                            <a class="font-light" href="about"><li>About</li></a>
+                            <a class="nav font-light" href="rotation"><li>Rotation</li></a>
+                            <a class="nav font-light" href="staff" ><li>Staff</li></a>
+                            <a class="nav font-light" href="sites"><li>Sites</li></a>
+                            <a class="nav font-light" href="about"><li>About</li></a>
                         </ul>
                     </div>
                 </div>
                 <!-- 'pages' are created here -->
                 
                 <div class="wrapper-element" id="content-container">
+                    <!-- 'rotationWeek' -->
+                    <div class="content-element rotationWeek">
+                        <div class="content-header">
+                            <span class="font-light">Week of February 3rd, 2014 </span>
+                        </div>
+                        <div class="rotationWeek-console"></div>
+                    </div>
                     <!-- 'rotation' -->
                     <div class="content-element rotation">
                         <div id="timetable-today-loader">
 
                         </div>
+                        <a class="nav font-light" href="rotationWeek">TEST</a>
                         <div id="timetable-tomorrow-loader">
 
                         </div>
@@ -86,8 +95,8 @@
                         </div>
                         <div class="content-header">
                             <span class="font-light">Arts</span>
-                           </div>
-                        <div class="content-container list-container"> 
+                        </div>
+                        <div class="content-container list-container">
                             <ul class="arts-list-data web-data list-data"></ul>
                         </div>
                         <div class="content-header">
@@ -96,20 +105,22 @@
                         <div class="content-container list-container">
                             <ul class="workexperience-list-data web-data list-data"></ul>
                         </div>
-                    
+
                     </div>
                     <!-- 'about' -->
                     <div class="content-element about">
                         <span class="font-thin app-title">
                             The Unofficial App of Windsor Secondary
                         </span>
-                        <div class="content-container app-desc" >
-                            <span class="font-light desc">WS Companion provides Windsor Secondary Students with essential information regarding 
-                            class timetables, teacher contact information, and important sites and blogs maintained by SD44 staff. 
-                             WS Companion is in no way maintained by the North Vancouver School District or Windsor Secondary.</span>
+                        <div class="content-container app-desc">
+                            <span class="font-light desc">
+                                WS Companion provides Windsor Secondary Students with essential information regarding
+                                class timetables, teacher contact information, and important sites and blogs maintained by SD44 staff.
+                                WS Companion is in no way maintained by the North Vancouver School District or Windsor Secondary.
+                            </span>
                             <span class="font-light author">Developed by Chris Bolton, Windsor Secondary student</span>
                         </div>
-                        <div class="content-container app-contact web-data" >
+                        <div class="content-container app-contact web-data">
                             <span class="desc font-light">Feature suggestions, bug reports, or other feedback is welcomed.</span>
                             <a href="mailto:codeandconfusion@gmail.com" class="font-light app-email">Support Email</a>
                             <a href="http://codeandconfusion.tumblr.com" class="font-light app-tumblr item-web">Development Blog</a>
@@ -120,20 +131,20 @@
                                 Version:
                             </span>
                             <span class="font-thin current-version"></span>
-                            <span class="font-light legal">&#169; Chris Bolton 2014</span> 
-                            <span class="font-light legal">"Windsor Secondary Crest" is a trademark of the North Vancouver School District.</span> 
+                            <span class="font-light legal">&#169; Chris Bolton 2014</span>
+                            <span class="font-light legal">"Windsor Secondary Crest" is a trademark of the North Vancouver School District.</span>
                         </div>
                     </div>
 
                 </div>
-               </div>
+            </div>
         </div>
         <script src="cordova.js"></script>
         <script src="core/logic/js/lib/jquery/jquery-1.10.2.min.js"></script>
         <script src="core/logic/js/lib/underscore/underscore-min.js"></script>
         <!-- Select logic.js or logic.min.js depending if dev or production build -->
-        <script src="core/logic/js/scripts/logic.min.js"></script>
-        <!-- <script src="core/logic/js/scripts/logic.js"></script> -->
+        <!--script src="core/logic/js/scripts/logic.min.js"></script>-->
+         <script src="core/logic/js/scripts/logic.js"></script> 
     </body>
 </html>
 
