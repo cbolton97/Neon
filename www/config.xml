@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.codeandconfusion.neon" version="1.0.0.3" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+<widget id="com.codeandconfusion.neon" version="1.0.1.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
     <name>WS Companion</name>
     <description>
         WS Companion provides Windsor Secondary Students with essential information regarding class timetables, teacher contact information, and important sites and blogs maintained by SD44 staff.

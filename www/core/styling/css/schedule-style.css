@@ -71,4 +71,16 @@
 	font:90% "platform light", "HelveticaNeue-Light", sans-serif;
 	color:#333;
 }
+.banner-container {
+    display:block;
+    padding:10px;
+    background:#FEF0DB;
+    text-align:center;
+}
+.alert-message {
+    text-transform:uppercase;
+	font:bold 100% "platform thin", "HelveticaNeue-UltraLight", sans-serif;
+    font-weight:100;
+	color:#000;
+}
 
