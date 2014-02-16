@@ -62,7 +62,7 @@ function onDeviceReady() {
 //Pink Shirt Day
     createDate();
     console.log(window.today);
-    if (window.today === "February 16, 2014") {
+    if (window.today === "February 26, 2014") {
         $("<link/>", {
             rel: "stylesheet",
             type: "text/css",

@@ -1,4 +1,4 @@
-# Neon :: WS Companion :: Version 1.0.0.1
+# Neon :: WS Companion :: Version 1.0.1.0
 ## Project
 WS Companion provides Windsor Secondary Students with essential information regarding class timetables, teacher contact information, and important sites and blogs maintained by SD44 staff. This application allows students to better organize their school schedule with an up-to-date view of the day’s block rotation. It also gives students a mobile-friendly method of contacting teachers through their email, or visiting their website. WS Companion is in no way maintained by the North Vancouver School District or Windsor Secondary.
 
@@ -6,6 +6,19 @@ WS Companion provides Windsor Secondary Students with essential information rega
 Neon is the project codename for WS Companion. More information on WS Companion can be found at [the app's download page](https://www.codeandconfusion.com/wscompanion). 
 ## Development
 ### Changelog
+
+#### Version 1.0.1.0
+* Implemented "pink mode"
+* Various fixes
+
+#### Version 1.0.0.3
+* Fixed rotation schedule errors
+* Fixed typos
+
+#### Version 1.0.0.2
+* Fixed rotation schedule errors
+* Various performance enhancements
+
 #### Version 1.0.0.1
 * Fixed block 4 time error
 * Fixed staff list not displaying properly
