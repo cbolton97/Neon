@@ -34,10 +34,20 @@ a:hover {
     font-family:"platform thin", "HelveticaNeue-UltraLight", sans-serif;
      font-weight:100;
 }
-
+.header-back {
+    display:block;
+    float:left;
+    margin:8px 0px 8px 2px;
+    width:32px;
+    height:32px;
+    background-image:url('../images/ic_action_back.png');
+    background-repeat:no-repeat;
+    background-size:contain;
+    display:none;
+}
 .header-logo{
-    position:absolute;
-    left:0;
+    display:block;
+    float:left;
     margin:6px auto 4px 6px;
     width:30.4px;
     height:36px;
@@ -64,48 +74,26 @@ a:hover {
 	text-align:left;
 }
 
-#wrapper-nav{
-	margin:0;
-	padding:0;
-	left:0;
-	width:100%;
-	height:40px;
-	background:#191919;
 
-}
-#wrapper-nav ul{
-	margin:0;
-	padding:0;
-	list-style:none;
-	text-align:center;
-	height:100%;
-}
-#wrapper-nav ul a{
-	margin:0;
-	padding:0;
-	display:inline-block;
-	width:24%;
-	height:100%;
-	text-decoration:none;
-	color:#FFF;
-	font-size:90%;
-	text-transform:uppercase;
-    -webkit-tap-highlight-color:rgba(0,0,0,0.2);
-	
-}
+
 #wrapper-nav ul a li{
 	margin:10px 0 0 0;
 	padding:0;
 	display:inline-block;
 }
-
-.content-header {
-   	margin:10px 0 0 0;
-	padding:5px 0 0 5px;
+.content-header,
+.schedule-header{
+	margin:10px 0 0 0;
+	padding:0;
 	background:#F2F2F2;
-	font-size:90%;
-	color:#007F0E;
 }
+    .content-header span,
+	.schedule-header span{
+		margin:0;
+		padding:5px;
+		font:90% "platform light", "HelveticaNeue-Light", sans-serif;
+		color:#333;
+	}
 .content-container {
     margin:0 auto;
 	padding:0;
@@ -163,7 +151,7 @@ a:hover {
 }
 .item-program,
 .item-link-container a {
-    padding:7px;
+    padding:3px 10px 7px 3px;
     color:#007F0E;
     background:transparent;
     font-size:90%;

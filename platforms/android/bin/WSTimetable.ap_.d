@@ -49,6 +49,7 @@
 /Users/user/Dev/Neon/platforms/android/assets/www/core/styling/icon/ios \
 /Users/user/Dev/Neon/platforms/android/assets/www/core/styling/icon/splash \
 /Users/user/Dev/Neon/platforms/android/assets/www/core/styling/icon/ios/icons \
+/Users/user/Dev/Neon/platforms/android/assets/www/core/styling/images/ic_action_back.png \
 /Users/user/Dev/Neon/platforms/android/assets/www/core/styling/images/ic_action_refresh.png \
 /Users/user/Dev/Neon/platforms/android/assets/www/core/styling/images/LogoHeader-fixed.png \
 /Users/user/Dev/Neon/platforms/android/assets/www/core/styling/templates/timetable-ui.html \
