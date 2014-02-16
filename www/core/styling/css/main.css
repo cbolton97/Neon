@@ -244,13 +244,11 @@ a:hover {
     font-size:110%;
     font-weight:bold;
 }
-.psd-info {
-    margin:0 5px;
-}
 .psd-link {
+    margin:0 5px;
     color:#FFF;
 }
-.
+
 /* Color Palette
 link green: #007F0E
 dark green: #1A6B36

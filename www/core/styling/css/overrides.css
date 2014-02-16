@@ -58,3 +58,20 @@
 	-webkit-box-shadow:0px 2px 1px #CCC;
     box-shadow:0px 2px 1px #CCC;
 }
+
+.alert-message {
+    text-transform:uppercase;
+	font:100% "platform thin", "HelveticaNeue-UltraLight", sans-serif;
+    font-weight:bold;
+	color:#444;
+}
+
+.error-message{
+	display:block;
+	padding:10px;
+    text-align:center;
+    text-transform:uppercase;
+	font:100% "platform thin", "HelveticaNeue-UltraLight", sans-serif;
+    font-weight:bold;
+	color:#444;
+}

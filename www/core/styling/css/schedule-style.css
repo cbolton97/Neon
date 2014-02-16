@@ -55,15 +55,7 @@
 }
 
 
-.error-message{
-	display:block;
-	padding:10px;
-    text-align:center;
-    text-transform:uppercase;
-	font:bold 100% "platform thin", "HelveticaNeue-UltraLight", sans-serif;
-    font-weight:bold;
-	color:#444;
-}
+
 .error-message span{
 	display:block;
 	padding:10px 5px;
@@ -77,10 +69,5 @@
     background:#FEF0DB;
     text-align:center;
 }
-.alert-message {
-    text-transform:uppercase;
-	font:bold 100% "platform thin", "HelveticaNeue-UltraLight", sans-serif;
-    font-weight:bold;
-	color:#444;
-}
+
 
