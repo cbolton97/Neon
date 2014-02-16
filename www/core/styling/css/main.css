@@ -226,12 +226,40 @@ a:hover {
 
 }
 
+.psd-container {
+    margin:20px auto 0 auto;
+    background:#F788BB;
+    display:none;
+}
+.psd {
+    display:block;
+    padding:10px;
+    color:#FFF;
+    text-align:center;
+}
+.psd-title {
+    display:block;
+    margin:0 0 7px 0;
+    text-transform:uppercase;
+    font-size:110%;
+    font-weight:bold;
+}
+.psd-info {
+    margin:0 5px;
+}
+.psd-link {
+    color:#FFF;
+}
+.
 /* Color Palette
 link green: #007F0E
 dark green: #1A6B36
 background green: #238C49;
 background grey: #F2F2F2
 light grey: #F5F5F5
+peach: #FEF0DB
+pink: #CE6A96;
+light pink: #F788BB;
  */
 
 

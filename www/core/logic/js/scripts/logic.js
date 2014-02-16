@@ -1,3 +1,4 @@
+
 //1 PREREQ.JS
 //backbutton logic
 function onBackKeyDown(target) {
@@ -55,6 +56,18 @@ function onDeviceReady() {
 
         window.today = months[today.getMonth()] + " " + todayDate + ", " + (fourdigits(today.getYear()));
         window.tomorrow = months[tomorrow.getMonth()] + " " + tomorrowDate + ", " + (fourdigits(tomorrow.getYear()));
+    }
+
+
+//Pink Shirt Day
+    createDate();
+    console.log(window.today);
+    if (window.today === "February 16, 2014") {
+        $("<link/>", {
+            rel: "stylesheet",
+            type: "text/css",
+            href: "./core/styling/css/psd.css"
+        }).appendTo("head");  
     }
 
     //error handling
@@ -160,7 +173,9 @@ function onDeviceReady() {
     }
 
     // 3 PAGES.JS
-    //each func represents a page in the ui
+//each func represents a page in the ui
+
+
     var pageList = {
         rotationWeek: function(){
             window.scrollTo(0, 0);
@@ -173,7 +188,6 @@ function onDeviceReady() {
             window.scrollTo(0, 0);
             createDate();
             $.getJSON('./core/logic/db/rotation.json', function (data) {
-     
                 for (var r in data.rotations) {
                     if (data.rotations[r].date === window.today) {
                         var today = data.rotations[r];
@@ -360,6 +374,8 @@ function onDeviceReady() {
     }
 
     //5 INIT.JS
+
+    
 
     //kick off
     loadPage('rotation', 'startup');
