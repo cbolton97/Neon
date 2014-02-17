@@ -58,7 +58,6 @@ function onDeviceReady() {
         window.tomorrow = months[tomorrow.getMonth()] + " " + tomorrowDate + ", " + (fourdigits(tomorrow.getYear()));
     }
 
-
 //Pink Shirt Day
     createDate();
     console.log(window.today);
@@ -69,6 +68,26 @@ function onDeviceReady() {
             href: "./core/styling/css/psd.css"
         }).appendTo("head");  
     }
+//Pink Mode
+    $('.pink-mode-bttn').bind('click', function (event) {
+        event.preventDefault();
+        event.returnValue = false;
+    });
+    $('.pink-mode-bttn').bind(trigger, function (event) {
+        var link = $('link[href="./core/styling/css/psd.css"]');
+        if ($('.pink-mode-bttn').html() === "Disable Pink Mode") {
+            link.remove();
+            $('.pink-mode-bttn').html("Enable Pink Mode");
+        } else {
+            $("<link/>", {
+                rel: "stylesheet",
+                type: "text/css",
+                href: "./core/styling/css/psd.css"
+            }).appendTo("head");
+            $('.pink-mode-bttn').html("Disable Pink Mode");
+        }
+      
+    });
 
     //error handling
     function error(location, message) {
