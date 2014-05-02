@@ -19,7 +19,7 @@ function onDeviceReady() {
 
 
     //global used to determine user input type ie touchstart
-    var trigger = "touchstart";
+    var trigger = "click";
 
 
     //phonegap watching for app resume
@@ -59,32 +59,37 @@ function onDeviceReady() {
     }
 
 //Pink Shirt Day
-    createDate();
-    console.log(window.today);
-    if (window.today === "February 26, 2014") {
+    createDate(); //sets window.today to the current date
+    if (window.today === "February 26, 2014") //Check's date for Feb 26
+    {
+        //If true, insert stylesheet with pink assets
         $("<link/>", {
             rel: "stylesheet",
             type: "text/css",
             href: "./core/styling/css/psd.css"
         }).appendTo("head");  
     }
-//Pink Mode
+//Pink Mode Button
     $('.pink-mode-bttn').bind('click', function (event) {
-        event.preventDefault();
+        //stops click from triggering page load
+        event.preventDefault(); 
         event.returnValue = false;
     });
-    $('.pink-mode-bttn').bind(trigger, function (event) {
-        var link = $('link[href="./core/styling/css/psd.css"]');
-        if ($('.pink-mode-bttn').html() === "Disable Pink Mode") {
-            link.remove();
-            $('.pink-mode-bttn').html("Enable Pink Mode");
+    $('.pink-mode-bttn').bind(trigger, function (event) //waits on response from button
+    {
+        var link = $('link[href="./core/styling/css/psd.css"]'); //set variable to element with stylesheet attached
+        if ($('.pink-mode-bttn').html() === "Disable Pink Mode") //checks the text of the button to decide what to do
+        {
+            link.remove(); //removes stylesheet
+            $('.pink-mode-bttn').html("Enable Pink Mode"); //changes button text to new value
         } else {
+            //adds stylesheet
             $("<link/>", {
                 rel: "stylesheet",
                 type: "text/css",
                 href: "./core/styling/css/psd.css"
             }).appendTo("head");
-            $('.pink-mode-bttn').html("Disable Pink Mode");
+            $('.pink-mode-bttn').html("Disable Pink Mode"); //changes button text to new value
         }
       
     });
@@ -184,10 +189,13 @@ function onDeviceReady() {
 
     //main loader func, aka the router
     function loadPage(requestedPage, source){
+
         $('.content-element').hide();
+        $('.header-logo').show();
         $('title').html(requestedPage);
         $('.'+ requestedPage).removeAttr('style');
         $('.header-refresh').attr('href', requestedPage);
+		
         routePage(requestedPage);
     }
 
@@ -200,6 +208,7 @@ function onDeviceReady() {
             window.scrollTo(0, 0);
             $('.header-back').attr('href', 'rotation');
             $('.header-back').show();
+            $('.header-logo').hide();
             $('.rotationWeek-console').html("It's alive!");
         
         },
@@ -342,6 +351,7 @@ function onDeviceReady() {
 
     //main func for 'staff' and 'sites'
     function displayListItem(itemType, source) {
+		console.log("Running helper function");
         switch (itemType) {
             case "admin":
                 $('.admin-list-data').append("<li> <span class='font-light item-title'>" + source.title +

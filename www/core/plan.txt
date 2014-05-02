@@ -1,0 +1,80 @@
+﻿
+"Stacks":[
+	{
+	"page":"Rotation",
+	"layer_0":"5_Day_View",
+	"layer_1":"1_Day_View"
+	},
+	{
+	"page":"Staff",
+	"layer_0":"Staff_List_View",
+	"layer_1":"Staff_Info_View"
+	},
+	"page":"Sites",
+	"layer_0":"Sites_List_View",
+	"layer_1":"Site_Info_View",
+	"layer_2":"Site_RSS_View"
+	},
+	"page":"About",
+	"layer_0":"About_View",
+	"layer_1":"Feedback_View",
+	}
+]
+VARIABLES:
+
+	$requestedPage
+	$requestedLayer
+	$currentPage
+	$currentLayer
+
+
+REQUESTS:
+	
+	routeLayer($initiator, $requestedLayer);
+
+
+ACTION: Startup requests page
+		requestLayer("startup", "5_Day_view");
+
+ACTION: User steps down stack (through link)
+		requestLayer("user", "1_Day_View");
+
+ACTION: User steps up stack (through back button)
+		requestLayer("user", "5_Day_View");
+
+ACTION: User selects stack (through nav)
+		reqyestLayer("nav", "About_View");
+
+
+
+
+Navigation sequence:
+
+function routeLayer($initiator, $requestedLayer){
+	$.getJSON('stacks.json', function (stack) {
+		if(initiator === "startup"){
+			//Save "lastPos" value of $requestedLayer to $requestedStackPos
+			//Save "lastPos" value of $currentLayer to $currentStackPos
+		}
+		//Save "page" value of $requestedLayer to $requestedPage 
+
+		if(initiator === "nav"){
+			if($requestedPage !== $currentPage){
+				if($requestedStackPos !== null){
+					$requestedLayer = $requestedStackPos
+					//Purge $requestedStackPos
+					$currentLayer = $requestedLayer
+				}
+			
+			}
+		}
+			//Hide all stack elements
+			$requestedLayer = $currentLayer
+			//Purge $requestedLayer
+			//Activate $currentLayer and $currentPage UI generation (using CSS classes)
+			//Run functions associated with $currentLayer and $currentPage
+
+		}
+
+	}
+}

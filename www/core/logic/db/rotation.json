@@ -367,18 +367,18 @@
 	},
 	{
 		"date":"March 19, 2014",
-		"structure":"none",
-		"order":""
+		"structure":"8_3",
+		"order":"2"
 	},
 	{
 		"date":"March 20, 2014",
-		"structure":"none",
-		"order":""
+		"structure":"9_3",
+		"order":"6"
 	},
 	{
 		"date":"March 21, 2014",
-		"structure":"none",
-		"order":""
+		"structure":"9_3",
+		"order":"3"
 	},
 	{
 		"date":"March 22, 2014",
@@ -392,13 +392,13 @@
 	},
 	{
 		"date":"March 24, 2014",
-		"structure":"none",
-		"order":""
+		"structure":"9_3",
+		"order":"7"
 	},
 	{
 		"date":"March 25, 2014",
-		"structure":"none",
-		"order":""
+		"structure":"8_3",
+		"order":"1"
 	},
 	{
 		"date":"March 26, 2014",
@@ -442,7 +442,7 @@
 	},
 	{
 		"date":"April 03, 2014",
-		"structure":"8_3_12",
+		"structure":"8_3",
 		"order":"6"
 	},
 	{

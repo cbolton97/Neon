@@ -1,4 +1,6 @@
-
+.router {
+    font-size:120%;
+}
 
 body{
 	margin:0;
@@ -34,7 +36,7 @@ a:hover {
     font-family:"platform thin", "HelveticaNeue-UltraLight", sans-serif;
      font-weight:100;
 }
-.header-back {
+.action-back {
     display:block;
     float:left;
     margin:8px 0px 8px 2px;
@@ -61,7 +63,7 @@ a:hover {
     
 
 }
-.header-refresh {
+.action-refresh {
     display:block;
     margin:8px;
     width:32px;
