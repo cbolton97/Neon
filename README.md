@@ -7,6 +7,12 @@ Neon is the project codename for WS Companion. More information on WS Companion 
 ## Development
 ### Changelog
 
+#### Version 1.5.0.0
+* Refreshed UI
+* New "week view" for block rotation
+* Fixed issue with some iOS 7.1 devices
+* Under the hood changes
+
 #### Version 1.0.1.0
 * Implemented "pink mode"
 * Various fixes
