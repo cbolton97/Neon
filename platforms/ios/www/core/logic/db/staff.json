@@ -1,8 +1,8 @@
-{
+﻿{
 "title":"Staff",
 "content":"List of staff members at Windsor Secondary",
 "admin":[
-	
+
 	{
 		"name":"Mr. A. Baumann",
 		"title":"Principal",
@@ -29,7 +29,7 @@
 		"email":"rpepper@sd44.ca"
 	}
 
-	
+
 ],
 "teachers":[
 	{

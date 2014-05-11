@@ -3,6 +3,10 @@
 "content":"Current Windsor sites.",
 "academics":[
 	{
+		"name":"Course Programming",
+		"website":"http://www.sd44.ca/school/windsor/ProgramsServices/Courses/Pages/default.aspx"
+	},
+	{
 		"name":"Graduating Class",
 		"website":"http://windsorgradinfo.webs.com/"
 	},

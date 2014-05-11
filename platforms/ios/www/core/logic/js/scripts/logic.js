@@ -1,370 +1,402 @@
-//1 PREREQ.JS
-//backbutton logic
-function onBackKeyDown(target) {
-    console.log("Processing back request from " + target);
-    loadPage(target, "back button");
-    $('.header-refresh').animateRotate(360, 1000, "linear");
-}
 
-//ios7 status bar fix
 function onDeviceReady() {
-    if (parseFloat(window.device.version) === 7.0) {
-        $('#wrapper-header').css('padding-top', '20px');
-        $('#content-container').css('padding-top', '3.5em');
-    }    document.addEventListener("backbutton", onBackKeyDown, false);
+    if (parseFloat(window.device.version) >= 7) {
+        $("#wrapper-header").css("padding-top", "20px")
+    }
+    document.addEventListener("backbutton", core["backbttn"], false)
 }
 
-    document.addEventListener('deviceready', onDeviceReady, false);
+function onResume() {
+    setTimeout(function () {
+        var e = $(".action-refresh").attr("href"),
+            t = e.search(">"),
+            n = e.search(","),
+            r = e.slice(0, t).trim();
+        destination = e.slice(t + 1, n).trim(), data = e.slice(n + 1).trim();
+        console.log(e);
+        core[destination](r, data)
+    }, 0)
+}
 
-
-    //global used to determine user input type ie touchstart
-    var trigger = "touchstart";
-
-
-    //phonegap watching for app resume
-    document.addEventListener("resume", onResume, false);
-    function onResume() {
-        setTimeout(function () {
-            var page = $('.header-refresh').attr('href');
-            loadPage(page, "resume");
-        }, 0);
+function createDate() {
+    function i(e) {
+        return e < 1e3 ? e + 1900 : e
     }
-
-
-    //creates time, space, and quite possibly the universe.
-
-    window.today;
-    window.tomorrow;
-    function createDate() {
-        var days = new Array('Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday');
-        var months = new Array('January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December');
-
-        var today = new Date();
-        var todayDate = ((today.getDate() < 10) ? "0" : "") + today.getDate();
-        function fourdigits(number) {
-            return (number < 1000) ? number + 1900 : number;
-        }
-
-        var tomorrow = new Date(new Date().getTime() + 24 * 60 * 60 * 1000)
-        var tomorrowDate = ((tomorrow.getDate() < 10) ? "0" : "") + tomorrow.getDate();
-        function fourdigits(number) {
-            return (number < 1000) ? number + 1900 : number;
-        }
-
-        var today_weekday = days[today.getDay()];
-
-        window.today = months[today.getMonth()] + " " + todayDate + ", " + (fourdigits(today.getYear()));
-        window.tomorrow = months[tomorrow.getMonth()] + " " + tomorrowDate + ", " + (fourdigits(tomorrow.getYear()));
+    var e = new Array("Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday");
+    var t = new Array("January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December");
+    var n = new Date;
+    var r = (n.getDate() < 10 ? "0" : "") + n.getDate();
+    var s = e[n.getDay()];
+    var o = t[n.getMonth()] + " " + r + ", " + i(n.getYear());
+    window.dateList = [o];
+    window.selectedDates = [];
+    var u = 24;
+    for (var a = 0; a < 6; a++) {
+        var f = new Date((new Date).getTime() + u * 60 * 60 * 1e3);
+        var l = (f.getDate() < 10 ? "0" : "") + f.getDate();
+        var c = t[f.getMonth()] + " " + l + ", " + i(f.getYear());
+        window.dateList.push(c);
+        var u = u + 24
     }
-
-    //error handling
-    function error(location, message) {
-        switch(location){
-            case "today":
-                $('#timetable-today-loader').load('./core/styling/templates/timetable-ui.html #error-today', function () {
-
-                    $('.error-message-today').html(message);
-                    $('.error-message-today').append("<span>Please refer to the school's website for the most up to date information.</span>");
+}
+$(".page-container, .layer-container").hide();
+document.addEventListener("deviceready", onDeviceReady, false);
+var trigger = "click";
+document.addEventListener("resume", onResume, false);
+$.fn.animateRotate = function (e, t, n, r) {
+    var i = $.speed(t, n, r);
+    var s = i.step;
+    return this.each(function (t, n) {
+        i.step = function (e) {
+            $.style(n, "-webkit-transform", "rotate(" + e + "deg)");
+            if (s) return s.apply(this, arguments)
+        };
+        $({
+            deg: 0
+        }).animate({
+            deg: e
+        }, i)
+    })
+};
+window.today;
+window.tomorrow;
+$(".staff-list ul").on("click", "li", function (e) {
+    var t = $(this).find(".item-link-container");
+    var n = $(t).is(":visible");
+    if (n) {
+        $(this).find(".item-link-container").hide();
+        $(".item-link-container").hide()
+    } else {
+        $(".item-link-container").hide();
+        $(this).find(".item-link-container").show()
+    }
+});
+$(".web-data").on("click", ".item-web", function (e) {
+    var t = $(this).attr("href");
+    var n = window.open(t, "_system", "location=yes");
+    e.preventDefault();
+    e.returnValue = false
+});
+$(document).on("click", ".route-initiator", function (e) {
+    e.returnValue = false;
+    e.preventDefault()
+}).on(trigger, ".route-initiator", function (e) {
+    var t = $(this).attr("href"),
+        n = t.search(">"),
+        r = t.search(","),
+        i = t.slice(0, n).trim();
+    destination = t.slice(n + 1, r).trim(), data = t.slice(r + 1).trim();
+    console.log(t);
+    core[destination](i, data);
+    if ($(this).hasClass("action-refresh")) {
+        $(this).animateRotate(360, 1e3, "linear")
+    }
+    if ($(this).hasClass("week-day")) {
+        $(this).addClass("selected")
+    }
+    if (i === "nav") {
+        $("#wrapper-nav ul a").removeClass("active");
+        $(this).addClass("active")
+    }
+    e.returnValue = false;
+    e.preventDefault()
+});
+var currentLayer, currentPage, cacheLayer, requestedStackPos, core = {
+        Rotation: function (e) {
+            $(".action-back").attr("href", "pop > routeLayer, Week_View");
+            switch (e) {
+            case "Week_View":
+                $(".action-back").attr("href", "#");
+                $(".week-data-loader").html(" ");
+                $(".action-back").hide();
+                createDate();
+                $.getJSON("./core/logic/db/rotation.json", function (e) {
+                    for (var t = 0; t < dateList.length; t++) {
+                        for (var n in e.rotations) {
+                            if (dateList[t] === e.rotations[n].date) {
+                                var r = e.rotations[n];
+                                window.selectedDates.push(r)
+                            }
+                        }
+                    }
+                    var i = 0;
+                    for (var s in window.selectedDates) {
+                        $(".week-data-loader").append("<div class='loader-" + i + "'></div>");
+                        var o = helper["formatSchedule"](window.selectedDates[s].order);
+                        helper["loadWeek"](window.selectedDates[s].date, window.selectedDates[s].day, window.selectedDates[s].structure, o, i);
+                        i++
+                    }
                 });
                 break;
-            case "tomorrow":
-                $('#timetable-tomorrow-loader').load('./core/styling/templates/timetable-ui.html #error-tomorrow', function () {
-
-                    $('.error-message-tomorrow').html(message);
-                    $('.error-message-tomorrow').append("<span>Please refer to the school's website for the most up to date information.</span>");
+            case "Day_View":
+                window.scrollTo(0, 0);
+                $(".action-back").show();
+                var t = $(".week-data-loader").find(".selected").find(".data").html();
+                $.getJSON("./core/logic/db/rotation.json", function (e) {
+                    for (var n in e.rotations) {
+                        if (t === e.rotations[n].date) {
+                            var r = helper["formatSchedule"](e.rotations[n].order);
+                            helper["loadDay"](e.rotations[n].date, e.rotations[n].day, e.rotations[n].structure, r)
+                        }
+                    }
+                });
+                break
+            }
+        },
+        Staff: function (e) {
+            $(".action-back").attr("href", "pop > routeLayer, Staff_list_View");
+            switch (e) {
+            case "Staff_List_View":
+                $(".action-back").attr("href", "#");
+                $(".action-back").hide();
+                $(".list-data").html("");
+                $.getJSON("./core/logic/db/staff.json", function (e) {
+                    for (var t in e.admin) {
+                        var n = e.admin[t];
+                        helper["displayListItem"]("admin", n)
+                    }
+                    for (var r in e.teachers) {
+                        var n = e.teachers[r];
+                        helper["displayListItem"]("teachers", n)
+                    }
+                    for (var i in e.support) {
+                        var n = e.support[i];
+                        helper["displayListItem"]("support", n)
+                    }
                 });
                 break;
-        }
-    
-    }
-    //animation plugin for refresh button
-    $.fn.animateRotate = function (angle, duration, easing, complete) {
-        var args = $.speed(duration, easing, complete);
-        var step = args.step;
-        return this.each(function (i, e) {
-            args.step = function (now) {
-                $.style(e, '-webkit-transform', 'rotate(' + now + 'deg)');
-                if (step) return step.apply(this, arguments);
-            };
-
-            $({ deg: 0 }).animate({ deg: angle }, args);
-        });
-    };
-    //watches refresh button
-    $('.header-refresh').bind('click', function (event) {
-        event.preventDefault();
-        event.returnValue = false;
-    });
-    $('.header-refresh').bind(trigger, function (event) {
-        var refreshTarget = $(this).attr('href');
-        loadPage(refreshTarget, "refresh button");
-        $('.header-refresh').animateRotate(360, 1000, "linear");
-        event.preventDefault();
-    });
-    //watches back button
-    $('.header-back').bind('click', function (event) {
-        event.preventDefault();
-        event.returnValue = false;
-    });
-    $('.header-back').bind(trigger, function (event) {
-        var backTarget = $(this).attr('href');
-        onBackKeyDown(backTarget);
-        event.preventDefault();
-    });
-    //watches list-drop down
-    $('.staff-list ul').on('click', 'li', function (event) {
-        var childPanel = $(this).find('.item-link-container');
-        var panelTest = $(childPanel).is(":visible");
-
-        if (panelTest) {
-            $(this).find('.item-link-container').hide();
-            $('.item-link-container').hide();
-        } else {
-            $('.item-link-container').hide();
-            $(this).find('.item-link-container').show();
-        }
-    });
-
-    //watches lists for web links and parses them with phonegap code
-
-    $('.web-data').on('click', '.item-web', function (event) {
-        var link = $(this).attr('href');
-        var ref = window.open(link, '_system', 'location=yes');
-        //insert InAppBrowser code for phonegap.
-        event.preventDefault();
-        event.returnValue = false;
-    });
-
-    //2 LOADER.JS
-    //watches nav for user input
-    $('.nav').bind('click', function (event) {
-        event.returnValue = false;
-        event.preventDefault();
-    });
-    $('.nav').bind(trigger, function (event) {
-
-        var requestedPage = $(this).attr('href');
-        loadPage(requestedPage, 'nav');
-        event.returnValue = false;
-        event.preventDefault();
-    });
-
-
-    //main loader func, aka the router
-    function loadPage(requestedPage, source){
-        $('.content-element').hide();
-        $('title').html(requestedPage);
-        $('.'+ requestedPage).removeAttr('style');
-        $('.header-refresh').attr('href', requestedPage);
-        routePage(requestedPage);
-    }
-
-    // 3 PAGES.JS
-    //each func represents a page in the ui
-    var pageList = {
-        rotationWeek: function(){
-            window.scrollTo(0, 0);
-            $('.header-back').attr('href', 'rotation');
-            $('.header-back').show();
-            $('.rotationWeek-console').html("It's alive!");
-        
+            case "Staff_Info_View":
+                $(".action-back").show();
+                break
+            }
         },
-        rotation: function () {
-            window.scrollTo(0, 0);
-            createDate();
-            $.getJSON('./core/logic/db/rotation.json', function (data) {
-     
-                for (var r in data.rotations) {
-                    if (data.rotations[r].date === window.today) {
-                        var today = data.rotations[r];
-                        loadTimeTable(today.structure, today.order, "today");
+        Discover: function (e) {
+            $(".action-back").attr("href", "pop > routeLayer, Discover_list_View");
+            switch (e) {
+            case "Discover_List_View":
+                $(".action-back").attr("href", "#");
+                $(".action-back").hide();
+                $(".list-data").html("");
+                $.getJSON("./core/logic/db/sites.json", function (e) {
+                    for (var t in e.academics) {
+                        var n = e.academics[t];
+                        helper["displayListItem"]("academics", n)
                     }
-                    if (data.rotations[r].date === window.tomorrow) {
-                        var tomorrow = data.rotations[r];
-                        loadTimeTable(tomorrow.structure, tomorrow.order, "tomorrow");
+                    for (var r in e.athletics) {
+                        var n = e.athletics[r];
+                        helper["displayListItem"]("athletics", n)
+                    }
+                    for (var i in e.arts) {
+                        var n = e.arts[i];
+                        helper["displayListItem"]("arts", n)
+                    }
+                    for (var s in e.workexperience) {
+                        var n = e.workexperience[s];
+                        helper["displayListItem"]("workexperience", n)
+                    }
+                });
+                break
+            }
+        },
+        About: function (e) {
+            $(".action-back").attr("href", "pop > routeLayer, About_View");
+            switch (e) {
+            case "About_View":
+                $(".action-back").attr("href", "#");
+                $(".action-back").hide();
+                $.getJSON("./core/logic/db/about.json", function (e) {
+                    $(".current-version").html(e.version)
+                });
+                break
+            }
+        },
+        routeLayer: function (e, t) {
+            $.getJSON("./core/logic/db/pages.json", function (n) {
+                var r = n.Stacks.length;
+                for (var i = 0; i < r; i++) {
+                    var s = _.values(n.Stacks[i]);
+                    if (_.contains(s, t)) {
+                        requestedPage = n.Stacks[i].page;
+                        break
                     }
                 }
-
-                var checkOutputToday = _.isUndefined(today);
-                var checkOutputTomorrow = _.isUndefined(tomorrow);
-
-                if (checkOutputToday) {
-                    error("today", "Today's schedule could not be loaded")
+                requestedStackPos = $("#" + requestedPage).children(".StackPos").attr("id");
+                switch (e) {
+                case "nav":
+                    window.scrollTo(0, 0);
+                    if (requestedPage !== currentPage) {
+                        if (requestedStackPos === undefined) {
+                            cacheLayer = t;
+                            console.log("Switching stacks, requested stack doesn't have a saved state.")
+                        } else {
+                            cacheLayer = requestedStackPos;
+                            console.log("Switching stacks, resuming saved state.")
+                        }
+                        $("#" + currentLayer).addClass("StackPos");
+                        $("#" + t).removeClass("StackPos")
+                    } else {
+                        cacheLayer = t;
+                        console.log("Not switching stacks, resetting stack state")
+                    }
+                    break;
+                case "push":
+                    cacheLayer = t;
+                    break;
+                case "pop":
+                    cacheLayer = t;
+                    break;
+                default:
+                    cacheLayer = t;
+                    console.log("Routing..");
+                    break
                 }
-                if (checkOutputTomorrow) {
-                    error("tomorrow", "Tomorrow's schedule could not be loaded")
-                }
-            });
+                currentLayer = cacheLayer;
+                $(".action-refresh").attr("href", "refresh > routeLayer, " + currentLayer);
+                currentPage = requestedPage;
+                $(".page-container, .layer-container").hide();
+                $("#" + currentPage + ", #" + currentLayer).removeAttr("style");
+                core[currentPage](currentLayer)
+            })
         },
-        staff: function () {
-            $('.list-data').html("");
-            $.getJSON('./core/logic/db/staff.json', function (data) {
-
-                for (var a in data.admin) {
-                    var source = data.admin[a];
-                    displayListItem("admin", source);
-                }
-
-                for (var t in data.teachers) {
-                    var source = data.teachers[t];
-                    displayListItem("teachers", source);
-                }
-
-                for (var s in data.support) {
-                    var source = data.support[s];
-                    displayListItem("support", source);
-                }
-            });
+        scheduleError: function (e, t, n) {
+            switch (t) {
+            case "Week_View":
+                $("#timetable-today-loader").load("./core/styling/templates/Week_View_template #error", function () {
+                    $(".loader-" + n + ".error-reason").html(e);
+                    $(".loader-" + n + ".error-reason").append("<span>Please refer to the school's website for the most up to date information.</span>")
+                });
+                break;
+            case "Day_View":
+                $("#timetable-tomorrow-loader").load("./core/styling/templates/Day_View.html #error", function () {
+                    $(".error-reason").html(e);
+                    $(".error-reason").append("<span>Please refer to the school's website for the most up to date information.</span>")
+                });
+                break
+            }
         },
-        sites: function () {
-            $('.list-data').html("");
-            $.getJSON('./core/logic/db/sites.json', function (data) {
-
-                for (var ac in data.academics) {
-                    var source = data.academics[ac];
-                    displayListItem("academics", source);
-                }
-
-                for (var at in data.athletics) {
-                    var source = data.athletics[at];
-                    displayListItem("athletics", source);
-                }
-
-                for (var ar in data.arts) {
-                    var source = data.arts[ar];
-                    displayListItem("arts", source);
-                }
-
-                for (var w in data.workexperience) {
-                    var source = data.workexperience[w];
-                    displayListItem("workexperience", source);
-                }
-
-
-            });
-        },
-        about: function () {
-            window.scrollTo(0, 0);
-            $.getJSON('./core/logic/db/about.json', function (data) {
-                $('.current-version').html(data.version);
-
-            });
+        backbttn: function () {
+            var e = $(".action-back").attr("href"),
+                t = e.search(">"),
+                n = e.search(","),
+                r = e.slice(0, t).trim();
+            destination = e.slice(t + 1, n).trim(), data = e.slice(n + 1).trim();
+            console.log(e);
+            core[destination](r, data)
         }
-    }
-    function routePage(requestedPage) {
-        pageList[requestedPage]();
-    }
-
-    //4 FUNC.JS
-    //main func for 'rotation' 
-    function loadTimeTable(structure, order, time) {
-        $('#timetable-'+ time +'-loader').load('./core/styling/templates/timetable-ui.html #' + structure, function() {
-            if (!(structure === "none")) {
-                if (order === "1" || order === "2" || order === "3") {
-                    var day = "1";
-                    switch (order) {
-                        case "1":
-                            var blockRotation = new Array(1, 2, 3, 4);
-                            break;
-                        case "2":
-                            var blockRotation = new Array(2, 3, 1, 4);
-                            break;
-                        case "3":
-                            var blockRotation = new Array(3, 1, 2, 4);
-                            break;
+    },
+    helper = {
+        formatSchedule: function (e) {
+            var t = new Array;
+            if (/^(?:1|2|3)$/.test(e)) {
+                t.push(1);
+                switch (e) {
+                case "1":
+                    t.push(1, 2, 3, 4);
+                    break;
+                case "2":
+                    t.push(2, 3, 1, 4);
+                    break;
+                case "3":
+                    t.push(3, 1, 2, 4);
+                    break
+                }
+            } else {
+                t.push(2);
+                switch (e) {
+                case "5":
+                    t.push(5, 6, 7, 8);
+                    break;
+                case "6":
+                    t.push(6, 7, 5, 8);
+                    break;
+                case "7":
+                    t.push(7, 5, 6, 8);
+                    break
+                }
+            }
+            return t
+        },
+        loadWeek: function (e, t, n, r, s) {
+            var o = new Array(r[1], r[2], r[3], r[4]);
+            $(".loader-" + s).load("./core/styling/templates/Week_View_template.html #" + n, function () {
+                var r = e.search(" "),
+                    s = e.search(","),
+                    u = e.slice(0, r).trim().slice(0, 3),
+                    a = e.slice(r + 1, s).trim(),
+                    f = t.slice(0, 3);
+                $(this).find(".data").html(e);
+                $(this).find(".day").append(f);
+                $(this).find(".num").append(a);
+                $(this).find(".month").append(u);
+                if (!(n === "none")) {
+                    var l = 1;
+                    for (i in o) {
+                        $(this).find(".order").append("<span>" + o[i] + "</span>");
+                        l++
                     }
                 } else {
-                    var day = "2";
-                    switch (order) {
-                        case "5":
-                            var blockRotation = new Array(5, 6, 7, 8);
-                            break;
-                        case "6":
-                            var blockRotation = new Array(6, 7, 5, 8);
-                            break;
-                        case "7":
-                            var blockRotation = new Array(7, 5, 6, 8);
-                            break;
+                    console.log("caught one " + n)
+                }
+            })
+        },
+        loadDay: function (e, t, n, r) {
+            var s = e.search(" "),
+                o = e.search(","),
+                u = e.slice(0, s).trim().slice(0, 3),
+                a = e.slice(s + 1, o).trim(),
+                f = t,
+                l = r[0],
+                c = new Array(r[1], r[2], r[3], r[4]);
+            $(".day-data-loader").load("./core/styling/templates/Day_View_template.html #" + n, function () {
+                if (!(n === "none")) {
+                    var t = 1;
+                    for (i in c) {
+                        $("#timetable" + t).html(c[i]);
+                        t++
                     }
+                    $(this).find(".data").html(e);
+                    $(this).find(".day").append(f);
+                    $(this).find(".num").append(a);
+                    $(this).find(".month").append(u);
+                    $(this).find(".dayType").append(l)
                 }
-                var blockPlacer = 1;
-                for (i in blockRotation) {
-                    $(this).find('#timetable' + blockPlacer).html(blockRotation[i]);
-                    blockPlacer++;
-                }
-                $(this).find('.schedule-header-day').html("Day " + day);
-            } else {
-                error(time, "No school scheduled for " + time);
-            }
-		
-            if(time === "today"){
-                $(this).find('.schedule-header-title').html("Today's Schedule");
-            } else if (time === "tomorrow") {
-                $(this).find('.schedule-header-title').html("Tomorrow's Schedule");
-            } else {
-                error("header-title", "No 'time' variable specified.");
-            }
-        });
-    }
-
-    //main func for 'staff' and 'sites'
-    function displayListItem(itemType, source) {
-        switch (itemType) {
+            })
+        },
+        displayListItem: function (e, t) {
+            switch (e) {
             case "admin":
-                $('.admin-list-data').append("<li> <span class='font-light item-title'>" + source.title +
-                "</span><span class='item-name font-light'> " + source.name +
-                "</span><div class='item-link-container'><a href='mailto:" + source.email +
-                "' class='item-email font-light'>Email: " + source.email + "</a> </div></li>");
+                $(".admin-list-data").append("<li> <span class='font-light item-title'>" + t.title + "</span><span class='item-name font-light'> " + t.name + "</span><div class='item-link-container'><a href='mailto:" + t.email + "' class='item-email route-initiator-null font-light'>Email: " + t.email + "</a> </div></li>");
                 break;
-
             case "teachers":
-                var teachersWebCheck = _.isUndefined(source.website);
-
-                if (!(teachersWebCheck)) {
-                    $('.teachers-list-data').append("<li><span class='font-light item-name'>" + source.name + "</span><div class='item-link-container'><a href='mailto:" +
-                         source.email + "' class='font-light item-email'>Email: " + source.email + "</a><br /><a class='font-light item-web' href='" + source.website + "'>Visit their website</a></div></li>");
+                var n = _.isUndefined(t.website);
+                if (!n) {
+                    $(".teachers-list-data").append("<li><span class='font-light item-name'>" + t.name + "</span><div class='item-link-container'><a href='mailto:" + t.email + "' class='route-initiator-null font-light item-email'>Email: " + t.email + "</a><br /><a class='font-light route-initiator-null item-web' href='" + t.website + "'>Visit their website</a></div></li>")
                 } else {
-                    $('.teachers-list-data').append("<li><span class='item-name font-light'>" + source.name +
-                        "</span><div class='item-link-container'><a href='mailto:" + source.email + "' class='font-light item-email'> Email: " + source.email + "</a></div></li>");
+                    $(".teachers-list-data").append("<li><span class='item-name font-light'>" + t.name + "</span><div class='item-link-container'><a route-initiator-null href='mailto:" + t.email + "' class='font-light item-email'> Email: " + t.email + "</a></div></li>")
                 }
                 break;
-
             case "support":
-                var supportWebCheck = _.isUndefined(source.website);
-
-                if (!(supportWebCheck)) {
-                    $('.support-list-data').append("<li> <span class='item-title font-light'>" + source.title +
-                        "</span><br /> <span class='item-name font-light'>" + source.name + "</span><div class='item-link-container'><a href='mailto:" +
-                        source.email + "' class='item-email font-light'>Email: " + source.email + "</a><br /><a class='item-web font-light' href='" + source.website + "'>Visit their website</a></div></li>");
+                var r = _.isUndefined(t.website);
+                if (!r) {
+                    $(".support-list-data").append("<li> <span class='item-title font-light'>" + t.title + "</span><br /> <span class='item-name font-light'>" + t.name + "</span><div class='item-link-container'><a href='mailto:" + t.email + "' class='item-email route-initiator-null font-light'>Email: " + t.email + "</a><br /><a class='route-initiator-null item-web font-light' href='" + t.website + "'>Visit their website</a></div></li>")
                 } else {
-               
-                    $('.support-list-data').append("<li> <span class='item-title font-light'>" + source.title +
-                        "</span><br /> <span class='item-name font-light'>" + source.name + "</span><div class='item-link-container'><a href='mailto:" + source.email +
-                        "' class='item-email font-light'>Email: " + source.email + "</a></div></li>");
+                    $(".support-list-data").append("<li> <span class='item-title font-light'>" + t.title + "</span><br /> <span class='item-name font-light'>" + t.name + "</span><div class='item-link-container'><a href='mailto:" + t.email + "' class='item-email route-initiator-null font-light'>Email: " + t.email + "</a></div></li>")
                 }
                 break;
-
             case "academics":
-                $('.academics-list-data').append("<li><a class='font-light item-program item-web' href='" + source.website + "'>" + source.name + "</a></li>");
+                $(".academics-list-data").append("<li><a class='font-light item-program route-initiator-null item-web' href='" + t.website + "'>" + t.name + "</a></li>");
                 break;
             case "athletics":
-                $('.athletics-list-data').append("<li><a class='font-light item-program item-web' href='" + source.website + "'>" + source.name + "</a></li>");
+                $(".athletics-list-data").append("<li><a class='font-light item-program route-initiator-null item-web' href='" + t.website + "'>" + t.name + "</a></li>");
                 break;
             case "arts":
-                $('.arts-list-data').append("<li><a class='font-light item-program item-web' href='" + source.website + "'>" + source.name + "</a></li>");
+                $(".arts-list-data").append("<li><a class='font-light item-program route-initiator-null item-web' href='" + t.website + "'>" + t.name + "</a></li>");
                 break;
             case "workexperience":
-                $('.workexperience-list-data').append("<li><a class='font-light item-program item-web' href='" + source.website + "'>" + source.name + "</a></li>");
-                break;
+                $(".workexperience-list-data").append("<li><a class='font-light item-program route-initiator-null item-web' href='" + t.website + "'>" + t.name + "</a></li>");
+                break
+            }
         }
-    }
-
-    //5 INIT.JS
-
-    //kick off
-    loadPage('rotation', 'startup');
-
-
-    //init phonegap
-    app.initialize();
-
+    };
+core["routeLayer"]("startup", "Week_View");
+app.initialize()

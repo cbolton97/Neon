@@ -24,6 +24,7 @@
 /Users/user/Dev/Neon/platforms/android/assets/www/core/logic/db \
 /Users/user/Dev/Neon/platforms/android/assets/www/core/logic/js \
 /Users/user/Dev/Neon/platforms/android/assets/www/core/logic/db/about.json \
+/Users/user/Dev/Neon/platforms/android/assets/www/core/logic/db/pages.json \
 /Users/user/Dev/Neon/platforms/android/assets/www/core/logic/db/rotation.json \
 /Users/user/Dev/Neon/platforms/android/assets/www/core/logic/db/sites.json \
 /Users/user/Dev/Neon/platforms/android/assets/www/core/logic/db/staff.json \
@@ -31,10 +32,9 @@
 /Users/user/Dev/Neon/platforms/android/assets/www/core/logic/js/scripts \
 /Users/user/Dev/Neon/platforms/android/assets/www/core/logic/js/lib/jquery \
 /Users/user/Dev/Neon/platforms/android/assets/www/core/logic/js/lib/underscore \
-/Users/user/Dev/Neon/platforms/android/assets/www/core/logic/js/lib/jquery/jquery-1.10.2.min.js \
+/Users/user/Dev/Neon/platforms/android/assets/www/core/logic/js/lib/jquery/jquery-1-10-2-min.js \
 /Users/user/Dev/Neon/platforms/android/assets/www/core/logic/js/lib/underscore/underscore-min.js \
-/Users/user/Dev/Neon/platforms/android/assets/www/core/logic/js/scripts/logic.js \
-/Users/user/Dev/Neon/platforms/android/assets/www/core/logic/js/scripts/logic.min.js \
+/Users/user/Dev/Neon/platforms/android/assets/www/core/logic/js/scripts/logic-min.js \
 /Users/user/Dev/Neon/platforms/android/assets/www/core/styling/css \
 /Users/user/Dev/Neon/platforms/android/assets/www/core/styling/fonts \
 /Users/user/Dev/Neon/platforms/android/assets/www/core/styling/icon \
@@ -42,7 +42,6 @@
 /Users/user/Dev/Neon/platforms/android/assets/www/core/styling/templates \
 /Users/user/Dev/Neon/platforms/android/assets/www/core/styling/css/main.css \
 /Users/user/Dev/Neon/platforms/android/assets/www/core/styling/css/overrides.css \
-/Users/user/Dev/Neon/platforms/android/assets/www/core/styling/css/schedule-style.css \
 /Users/user/Dev/Neon/platforms/android/assets/www/core/styling/fonts/android \
 /Users/user/Dev/Neon/platforms/android/assets/www/core/styling/fonts/android/Roboto-Light.ttf \
 /Users/user/Dev/Neon/platforms/android/assets/www/core/styling/fonts/android/Roboto-Thin.ttf \
@@ -52,7 +51,9 @@
 /Users/user/Dev/Neon/platforms/android/assets/www/core/styling/images/ic_action_back.png \
 /Users/user/Dev/Neon/platforms/android/assets/www/core/styling/images/ic_action_refresh.png \
 /Users/user/Dev/Neon/platforms/android/assets/www/core/styling/images/LogoHeader-fixed.png \
-/Users/user/Dev/Neon/platforms/android/assets/www/core/styling/templates/timetable-ui.html \
+/Users/user/Dev/Neon/platforms/android/assets/www/core/styling/images/LogoHeader.png \
+/Users/user/Dev/Neon/platforms/android/assets/www/core/styling/templates/Day_View_template.html \
+/Users/user/Dev/Neon/platforms/android/assets/www/core/styling/templates/Week_View_template.html \
 /Users/user/Dev/Neon/platforms/android/assets/www/plugins/org.apache.cordova.device \
 /Users/user/Dev/Neon/platforms/android/assets/www/plugins/org.apache.cordova.inappbrowser \
 /Users/user/Dev/Neon/platforms/android/assets/www/plugins/org.apache.cordova.device/www \
