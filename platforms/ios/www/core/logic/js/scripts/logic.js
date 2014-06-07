@@ -140,7 +140,17 @@ var currentLayer, currentPage, cacheLayer, requestedStackPos, core = {
                         }
                     }
                 });
-                break
+                break;
+            case "Warning_View":
+                window.scrollTo(0, 0);
+                $(".action-back").show();
+                
+                break;
+                case "Exam_View":
+                window.scrollTo(0, 0);
+                $(".action-back").show();
+                
+                break;
             }
         },
         Staff: function (e) {

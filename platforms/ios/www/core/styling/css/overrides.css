@@ -1,9 +1,8 @@
-﻿/*WEB*/
-@font-face {
-    font-family: "platform thin";
-    src: url("../fonts/android/Roboto-Thin.ttf") format("opentype");   
-    }
-@font-face {
-    font-family: "platform light";
-    src: url("../fonts/android/Roboto-Light.ttf") format("opentype");   
-    }
+﻿/*IOS Devices*/
+#content-container{
+    margin:0;
+    padding:70px 0 50px 0 !IMPORTANT;
+   overflow:hidden;
+    -webkit-overflow-scrolling: touch;
+    
+}

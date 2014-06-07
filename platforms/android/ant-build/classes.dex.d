@@ -1,0 +1,24 @@
+/Applications/MAMP/htdocs/neon/platforms/android/ant-build/classes.dex : \
+/Applications/MAMP/htdocs/neon/platforms/android/ant-build/classes/com/codeandconfusion/neon/BuildConfig.class \
+/Applications/MAMP/htdocs/neon/platforms/android/ant-build/classes/com/codeandconfusion/neon/R$attr.class \
+/Applications/MAMP/htdocs/neon/platforms/android/ant-build/classes/com/codeandconfusion/neon/R$drawable.class \
+/Applications/MAMP/htdocs/neon/platforms/android/ant-build/classes/com/codeandconfusion/neon/R$string.class \
+/Applications/MAMP/htdocs/neon/platforms/android/ant-build/classes/com/codeandconfusion/neon/R$xml.class \
+/Applications/MAMP/htdocs/neon/platforms/android/ant-build/classes/com/codeandconfusion/neon/R.class \
+/Applications/MAMP/htdocs/neon/platforms/android/ant-build/classes/com/codeandconfusion/neon/WSTimetable.class \
+/Applications/MAMP/htdocs/neon/platforms/android/ant-build/classes/org/apache/cordova/device/Device$1.class \
+/Applications/MAMP/htdocs/neon/platforms/android/ant-build/classes/org/apache/cordova/device/Device.class \
+/Applications/MAMP/htdocs/neon/platforms/android/ant-build/classes/org/apache/cordova/inappbrowser/InAppBrowser$1.class \
+/Applications/MAMP/htdocs/neon/platforms/android/ant-build/classes/org/apache/cordova/inappbrowser/InAppBrowser$2.class \
+/Applications/MAMP/htdocs/neon/platforms/android/ant-build/classes/org/apache/cordova/inappbrowser/InAppBrowser$3.class \
+/Applications/MAMP/htdocs/neon/platforms/android/ant-build/classes/org/apache/cordova/inappbrowser/InAppBrowser$4.class \
+/Applications/MAMP/htdocs/neon/platforms/android/ant-build/classes/org/apache/cordova/inappbrowser/InAppBrowser$5$1.class \
+/Applications/MAMP/htdocs/neon/platforms/android/ant-build/classes/org/apache/cordova/inappbrowser/InAppBrowser$5$2.class \
+/Applications/MAMP/htdocs/neon/platforms/android/ant-build/classes/org/apache/cordova/inappbrowser/InAppBrowser$5$3.class \
+/Applications/MAMP/htdocs/neon/platforms/android/ant-build/classes/org/apache/cordova/inappbrowser/InAppBrowser$5$4.class \
+/Applications/MAMP/htdocs/neon/platforms/android/ant-build/classes/org/apache/cordova/inappbrowser/InAppBrowser$5$5.class \
+/Applications/MAMP/htdocs/neon/platforms/android/ant-build/classes/org/apache/cordova/inappbrowser/InAppBrowser$5.class \
+/Applications/MAMP/htdocs/neon/platforms/android/ant-build/classes/org/apache/cordova/inappbrowser/InAppBrowser$InAppBrowserClient.class \
+/Applications/MAMP/htdocs/neon/platforms/android/ant-build/classes/org/apache/cordova/inappbrowser/InAppBrowser.class \
+/Applications/MAMP/htdocs/neon/platforms/android/ant-build/classes/org/apache/cordova/inappbrowser/InAppChromeClient.class \
+/Applications/MAMP/htdocs/neon/platforms/android/ant-build/dexedLibs/classes-e0146d58a51413a34ff7e3859acd0454.jar \

@@ -3,7 +3,9 @@
       {
          "page":"Rotation",
          "layer_0":"Week_View",
-         "layer_1":"Day_View"
+         "layer_1":"Day_View",
+         "layer_2":"Exam_View",
+         "layer_3":"Warning_View"
       },
       {
          "page":"Staff",
