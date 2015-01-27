@@ -1,9 +1,6 @@
-
 function onDeviceReady() {
-    if (parseFloat(window.device.version) >= 7) {
-        $("#wrapper-header").css("padding-top", "20px")
-    }
-    document.addEventListener("backbutton", core["backbttn"], false)
+    
+    document.addEventListener("backbutton", core["backbttn"], false);
 }
 
 function onResume() {
@@ -20,7 +17,7 @@ function onResume() {
 
 function createDate() {
     function i(e) {
-        return e < 1e3 ? e + 1900 : e
+        return e < 1e3 ? e + 1900 : e;
     }
     var e = new Array("Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday");
     var t = new Array("January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December");
@@ -41,6 +38,7 @@ function createDate() {
 }
 $(".page-container, .layer-container").hide();
 document.addEventListener("deviceready", onDeviceReady, false);
+
 var trigger = "click";
 document.addEventListener("resume", onResume, false);
 $.fn.animateRotate = function (e, t, n, r) {
@@ -106,6 +104,7 @@ var currentLayer, currentPage, cacheLayer, requestedStackPos, core = {
             $(".action-back").attr("href", "pop > routeLayer, Week_View");
             switch (e) {
             case "Week_View":
+                $('#wrapper-nav').show();
                 $(".action-back").attr("href", "#");
                 $(".week-data-loader").html(" ");
                 $(".action-back").hide();
@@ -131,6 +130,7 @@ var currentLayer, currentPage, cacheLayer, requestedStackPos, core = {
             case "Day_View":
                 window.scrollTo(0, 0);
                 $(".action-back").show();
+                $('#wrapper-nav').hide();
                 var t = $(".week-data-loader").find(".selected").find(".data").html();
                 $.getJSON("./core/logic/db/rotation.json", function (e) {
                     for (var n in e.rotations) {
@@ -157,6 +157,7 @@ var currentLayer, currentPage, cacheLayer, requestedStackPos, core = {
             $(".action-back").attr("href", "pop > routeLayer, Staff_list_View");
             switch (e) {
             case "Staff_List_View":
+                $('#wrapper-nav').show();
                 $(".action-back").attr("href", "#");
                 $(".action-back").hide();
                 $(".list-data").html("");
@@ -184,6 +185,7 @@ var currentLayer, currentPage, cacheLayer, requestedStackPos, core = {
             $(".action-back").attr("href", "pop > routeLayer, Discover_list_View");
             switch (e) {
             case "Discover_List_View":
+                $('#wrapper-nav').show();
                 $(".action-back").attr("href", "#");
                 $(".action-back").hide();
                 $(".list-data").html("");
@@ -212,11 +214,14 @@ var currentLayer, currentPage, cacheLayer, requestedStackPos, core = {
             $(".action-back").attr("href", "pop > routeLayer, About_View");
             switch (e) {
             case "About_View":
+                $('#wrapper-nav').show();
                 $(".action-back").attr("href", "#");
                 $(".action-back").hide();
-                $.getJSON("./core/logic/db/about.json", function (e) {
-                    $(".current-version").html(e.version)
-                });
+                navigator.appInfo.getAppInfo(function(appInfo) {
+                    $(".current-version").html(appInfo.version);
+                  }, function(err){
+                      $(".current-version").html(err);
+                  });
                 break
             }
         },
@@ -347,7 +352,7 @@ var currentLayer, currentPage, cacheLayer, requestedStackPos, core = {
                 } else {
                     console.log("caught one " + n)
                 }
-            })
+            });
         },
         loadDay: function (e, t, n, r) {
             var s = e.search(" "),

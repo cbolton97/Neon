@@ -15,26 +15,26 @@ module.exports = [
         ]
     },
     {
-        "file": "plugins/org.apache.cordova.device/www/device.js",
-        "id": "org.apache.cordova.device.device",
-        "clobbers": [
-            "device"
+        "file": "plugins/com.yezhiming.cordova.appinfo/www/appinfo.js",
+        "id": "com.yezhiming.cordova.appinfo.AppInfo",
+        "merges": [
+            "navigator.appInfo"
         ]
     },
     {
-        "file": "plugins/org.apache.cordova.inappbrowser/www/InAppBrowser.js",
-        "id": "org.apache.cordova.inappbrowser.InAppBrowser",
+        "file": "plugins/org.apache.cordova.statusbar/www/statusbar.js",
+        "id": "org.apache.cordova.statusbar.statusbar",
         "clobbers": [
-            "window.open"
+            "window.StatusBar"
         ]
     }
 ];
 module.exports.metadata = 
 // TOP OF METADATA
 {
-    "org.apache.cordova.console": "0.2.5",
-    "org.apache.cordova.device": "0.2.5",
-    "org.apache.cordova.inappbrowser": "0.2.5"
+    "org.apache.cordova.console": "0.2.11",
+    "com.yezhiming.cordova.appinfo": "2.0.2",
+    "org.apache.cordova.statusbar": "0.1.8"
 }
 // BOTTOM OF METADATA
 });

@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.codeandconfusion.neon" version="2.0.1" android-versionCode="10" ios-CFBundleVersion="10" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+    <name>WS Companion</name>
+    <description>
+        WS Companion provides Windsor Secondary Students with essential information regarding class timetables, teacher contact information, and important sites and blogs maintained by SD44 staff.
+    </description>
+    <author email="codeandconfusion@gmail.com" href="http://codeandconfusion.com/wscompanion">
+        Code and Confusion
+    </author>
+    <content src="index.html" />
+    <access origin="*" />
+    <preference name="DisallowOverscroll" value="true"/>
+    <preference name="StatusBarOverlaysWebView" value="false" />
+    <preference name="StatusBarBackgroundColor" value="#37BC61" />
+    <preference name="StatusBarStyle" value="lightcontent" />
+</widget>

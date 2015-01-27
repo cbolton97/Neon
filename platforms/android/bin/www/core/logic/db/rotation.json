@@ -1,0 +1,267 @@
+{
+"title":"rotation",
+"content":
+"Hi, Rotation!",
+"rotations":[
+	
+	{
+	"date":"November 10, 2014",
+	"day":"Monday",
+	"structure":"none",
+	"order":""
+	},
+	{
+	"date":"November 11, 2014",
+	"day":"Tuesday",
+	"structure":"none",
+	"order":""
+	},
+	{
+	"date":"November 12, 2014",
+	"day":"Wednesday",
+	"structure":"8_3",
+	"order":"2"
+	},
+	{
+	"date":"November 13, 2014",
+	"day":"Thursday",
+	"structure":"8_3",
+	"order":"6"
+	},
+	{
+	"date":"November 14, 2014",
+	"day":"Friday",
+	"structure":"8_3",
+	"order":"3"
+	},
+	{
+	"date":"November 15, 2014",
+	"day":"Saturday",
+	"structure":"none",
+	"order":""
+	},
+	{
+	"date":"November 16, 2014",
+	"day":"Sunday",
+	"structure":"none",
+	"order":""
+	},
+	{
+	"date":"November 17, 2014",
+	"day":"Monday",
+	"structure":"8_3",
+	"order":"7"
+	},
+	{
+	"date":"November 18, 2014",
+	"day":"Tuesday",
+	"structure":"8_3",
+	"order":"1"
+	},
+	{
+	"date":"November 19, 2014",
+	"day":"Wednesday",
+	"structure":"8_3",
+	"order":"5"
+	},
+	{
+	"date":"November 20, 2014",
+	"day":"Thursday",
+	"structure":"8_3",
+	"order":"2"
+	},
+	{
+	"date":"November 21, 2014",
+	"day":"Friday",
+	"structure":"8_3",
+	"order":"6"
+	},
+	{
+	"date":"November 22, 2014",
+	"day":"Saturday",
+	"structure":"none",
+	"order":""
+	},
+	{
+	"date":"November 23, 2014",
+	"day":"Sunday",
+	"structure":"none",
+	"order":""
+	},
+	{
+	"date":"November 24, 2014",
+	"day":"Monday",
+	"structure":"8_3",
+	"order":"1"
+	},
+	{
+	"date":"November 25, 2014",
+	"day":"Tuesday",
+	"structure":"none",
+	"order":"5"
+	},
+	{
+	"date":"November 26, 2014",
+	"day":"Wednesday",
+	"structure":"9_3",
+	"order":"2"
+	},
+	{
+	"date":"November 27, 2014",
+	"day":"Thursday",
+	"structure":"8_3",
+	"order":"6"
+	},
+	{
+	"date":"November 28, 2014",
+	"day":"Friday",
+	"structure":"8_3",
+	"order":"3"
+	},
+	{
+	"date":"November 29, 2014",
+	"day":"Saturday",
+	"structure":"none",
+	"order":""
+	},
+	{
+	"date":"November 30, 2014",
+	"day":"Sunday",
+	"structure":"none",
+	"order":""
+	},
+	{
+	"date":"December 01, 2014",
+	"day":"Monday",
+	"structure":"8_3",
+	"order":"7"
+	},
+	{
+	"date":"December 02, 2014",
+	"day":"Tuesday",
+	"structure":"8_3",
+	"order":"1"
+	},
+	{
+	"date":"December 03, 2014",
+	"day":"Wednesday",
+	"structure":"8_3",
+	"order":"5"
+	},
+	{
+	"date":"December 04, 2014",
+	"day":"Thursday",
+	"structure":"8_3",
+	"order":"2"
+	},
+	{
+	"date":"December 05, 2014",
+	"day":"Friday",
+	"structure":"none",
+	"order":""
+	},
+	{
+	"date":"December 06, 2014",
+	"day":"Saturday",
+	"structure":"none",
+	"order":""
+	},
+	{
+	"date":"December 07, 2014",
+	"day":"Sunday",
+	"structure":"none",
+	"order":""
+	},
+	{
+	"date":"December 08, 2014",
+	"day":"Monday",
+	"structure":"8_3",
+	"order":"1"
+	},
+	{
+	"date":"December 09, 2014",
+	"day":"Tuesday",
+	"structure":"8_3",
+	"order":"5"
+	},
+	{
+	"date":"December 10, 2014",
+	"day":"Wednesday",
+	"structure":"8_3",
+	"order":"2"
+	},
+	{
+	"date":"December 11, 2014",
+	"day":"Thursday",
+	"structure":"8_3",
+	"order":"6"
+	},
+	{
+	"date":"December 12, 2014",
+	"day":"Friday",
+	"structure":"8_3",
+	"order":"3"
+	},
+	{
+	"date":"December 13, 2014",
+	"day":"Saturday",
+	"structure":"none",
+	"order":""
+	},
+	{
+	"date":"December 14, 2014",
+	"day":"Sunday",
+	"structure":"none",
+	"order":""
+	},
+	{
+	"date":"December 15, 2014",
+	"day":"Monday",
+	"structure":"8_3",
+	"order":"7"
+	},
+	{
+	"date":"December 16, 2014",
+	"day":"Tuesday",
+	"structure":"8_3",
+	"order":"1"
+	},
+	{
+	"date":"December 17, 2014",
+	"day":"Wednesday",
+	"structure":"8_3",
+	"order":"5"
+	},
+	{
+	"date":"December 18, 2014",
+	"day":"Thursday",
+	"structure":"8_3",
+	"order":"2"
+	},
+	{
+	"date":"December 19, 2014",
+	"day":"Friday",
+	"structure":"8_3",
+	"order":"6"
+	},
+	{
+	"date":"December 20, 2014",
+	"day":"Saturday",
+	"structure":"none",
+	"order":""
+	},
+	{
+	"date":"December 21, 2014",
+	"day":"Sunday",
+	"structure":"none",
+	"order":""
+	},
+	{
+	"date":"September 01, 2015",
+	"day":"Monday",
+	"structure":"out",
+	"order":""
+	}
+
+
+]}

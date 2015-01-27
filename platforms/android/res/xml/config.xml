@@ -1,14 +1,11 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.codeandconfusion.neon" version="1.5.1.2" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+<widget android-versionCode="120" id="com.codeandconfusion.neon" ios-CFBundleVersion="11" version="2.0.3" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
     <preference name="loglevel" value="DEBUG" />
-    <feature name="App">
-        <param name="android-package" value="org.apache.cordova.App" />
+    <feature name="AppInfo">
+        <param name="android-package" value="com.yezhiming.cordova.appinfo.AppInfo" />
     </feature>
-    <feature name="Device">
-        <param name="android-package" value="org.apache.cordova.device.Device" />
-    </feature>
-    <feature name="InAppBrowser">
-        <param name="android-package" value="org.apache.cordova.inappbrowser.InAppBrowser" />
+    <feature name="StatusBar">
+        <param name="android-package" onload="true" value="org.apache.cordova.statusbar.StatusBar" />
     </feature>
     <name>WS Companion</name>
     <description>
@@ -17,23 +14,10 @@
     <author email="codeandconfusion@gmail.com" href="http://codeandconfusion.com/wscompanion">
         Code and Confusion
     </author>
-    <feature name="http://api.phonegap.com/1.0/device" />
-    <preference name="permissions" value="none" />
-    <preference name="orientation" value="portrait" />
-    <preference name="target-device" value="iphone" />
-    <preference name="fullscreen" value="false" />
-    <preference name="prerendered-icon" value="true" />
-    <preference name="stay-in-webview" value="false" />
+    <content src="index.html" />
+    <access origin="*" />
     <preference name="DisallowOverscroll" value="true" />
-    <preference name="webviewbounce" value="false" />
-    <preference name="ios-statusbarstyle" value="black-opaque" />
-    <preference name="detect-data-types" value="true" />
-    <preference name="exit-on-suspend" value="false" />
-    <preference name="show-splash-screen-spinner" value="true" />
-    <preference name="auto-hide-splash-screen" value="true" />
-    <preference name="disable-cursor" value="false" />
-    <preference name="android-minSdkVersion" value="7" />
-    <preference name="android-installLocation" value="auto" />
-    <icon src="icon.png" />
-    <access origin="http://127.0.0.1*" />
+    <preference name="StatusBarOverlaysWebView" value="false" />
+    <preference name="StatusBarBackgroundColor" value="#37BC61" />
+    <preference name="StatusBarStyle" value="lightcontent" />
 </widget>

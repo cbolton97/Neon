@@ -5,6 +5,11 @@
     },
     "config_munge": {
         "files": {
+            "framework": {
+                "parents": {
+                    "AudioToolbox.framework": []
+                }
+            },
             "config.xml": {
                 "parents": {
                     "/*": [
@@ -13,21 +18,19 @@
                             "count": 1
                         },
                         {
-                            "xml": "<feature name=\"Device\"><param name=\"ios-package\" value=\"CDVDevice\" /></feature>",
+                            "xml": "<feature name=\"AppInfo\"><param name=\"ios-package\" value=\"AppInfo\" /></feature>",
                             "count": 1
                         },
                         {
-                            "xml": "<feature name=\"InAppBrowser\"><param name=\"ios-package\" value=\"CDVInAppBrowser\" /></feature>",
+                            "xml": "<feature name=\"StatusBar\"><param name=\"ios-package\" onload=\"true\" value=\"CDVStatusBar\" /></feature>",
                             "count": 1
-                        }
-                    ]
-                }
-            },
-            "framework": {
-                "parents": {
-                    "CoreGraphics.framework": [
+                        },
                         {
-                            "xml": "false",
+                            "xml": "<preference name=\"StatusBarOverlaysWebView\" value=\"true\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<preference name=\"StatusBarStyle\" value=\"lightcontent\" />",
                             "count": 1
                         }
                     ]
@@ -39,10 +42,10 @@
         "org.apache.cordova.console": {
             "PACKAGE_NAME": "com.codeandconfusion.neon"
         },
-        "org.apache.cordova.device": {
+        "com.yezhiming.cordova.appinfo": {
             "PACKAGE_NAME": "com.codeandconfusion.neon"
         },
-        "org.apache.cordova.inappbrowser": {
+        "org.apache.cordova.statusbar": {
             "PACKAGE_NAME": "com.codeandconfusion.neon"
         }
     },
